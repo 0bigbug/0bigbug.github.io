@@ -1,0 +1,1770 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="三月每日一题, Zhang&#39;s blog">
+    <meta name="description" content="三月每日一题三月三十一日
+1.数字编码与编码效率
+
+以太网采用的编码技术为（曼彻斯特）。传统以太网使用的是曼彻斯特编码，编码效率为50%。差分曼彻斯特编码用于令牌环网。 
+
+2.计算机专业英语
+
+Network security consi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>三月每日一题 | Zhang&#39;s blog</title>
+    <link rel="icon" type="image/png" href="/logo.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Zhang's blog" type="application/atom+xml">
+</head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Zhang&#39;s blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Zhang&#39;s blog</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/0bigbug/0bigbug.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/0bigbug/0bigbug.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">三月每日一题</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/">
+                                <span class="chip bg-color">网络工程师</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/" class="post-category">
+                                每日一题
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-03-19
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-04-14
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    6.7k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    24 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="三月每日一题"><a href="#三月每日一题" class="headerlink" title="三月每日一题"></a>三月每日一题</h1><h2 id="三月三十一日"><a href="#三月三十一日" class="headerlink" title="三月三十一日"></a>三月三十一日</h2><hr>
+<p><strong>1.数字编码与编码效率</strong></p>
+<blockquote>
+<p>以太网采用的编码技术为（<font color="red">曼彻斯特</font>）。<br>传统以太网使用的是曼彻斯特编码，编码效率为<strong>50</strong>%。<br>差分曼彻斯特编码用于令牌环网。 </p>
+</blockquote>
+<p><strong>2.计算机专业英语</strong></p>
+<blockquote>
+<p><strong>Network security consists of policies and practices to prevent and monitor <font color="red">(A. unauthorized)</font> access,misuse,modification,or denial of a computer network and network-accessible resource.（网络安全包括防止和监视未经授权访问、滥用、修改或拒绝计算机网络和网络可访问资源的策略和实践。） Network security involves the authorization of access to data in a network,which is controlled by the network <font color="red">(D. administrator)</font>.（网络安全涉及对网络中数据的访问授权，由网络管理员控制。） Users choose or are assigned an ID and password or other authenticating information that allows them to access to information and programs within their authority.（用户选择或分配 ID 和密码或其他身份验证信息，以允许他们访问其权限内的信息和程序。） Network security secures the network, as well as protecting and overseeing operation being done. The most common and simple way of protecting a network resource is by assigning it a <font color="red">(B. unique)</font> name and a corresponding password.（网络安全保护网络，以及保护和监督正在进行的操作。保护网络资源的最常见和最简单的方法是为其分配唯一名称和相应的密码。） Network security starts with authentication. Once authenticated,a <font color="red">(A. firewall)</font> enforces access policies such as what services are allowed to be accessed by the network users.（网络安全从身份验证开始。通过身份验证后，防火墙将强制执行访问策略，例如允许网络用户访问哪些服务。） Though effective to prevent unauthorized access, this component may fail to check potentially harmful content such as computer <font color="red">(C. worms)</font> or Trojans being transmitted over the network.（尽管此组件可以有效地防止未经授权的访问，但可能无法检查通过网络传输的潜在有害内容，例如计算机蠕虫或特洛伊木马。）</strong><br>问题1.  </p>
+<ul>
+<li><font color="red">A. unauthorized （未授权的）</font></li>
+<li>B. harmful  （有害的）</li>
+<li>C. dangerous  （危险的）</li>
+<li>D. frequent  （频繁的）</li>
+</ul>
+<p>问题2.</p>
+<ul>
+<li>A. user （用户）</li>
+<li>B. agent （代理人、代理商）</li>
+<li>C. server （服务器）</li>
+<li><font color="red">D. administrator （管理员）</font></li>
+</ul>
+<p>问题3.</p>
+<ul>
+<li>A. complex （复杂的）</li>
+<li><font color="red">B. unique （独特的）</font></li>
+<li>C. catchy （朗朗上口的，吸引人的）</li>
+<li>D. long （长的）</li>
+</ul>
+<p>问题4.</p>
+<ul>
+<li><font color="red">A. firewall （防火墙）</font></li>
+<li>B. proxy （代理）</li>
+<li>C. gateway （网关）</li>
+<li>D. host （主机）</li>
+</ul>
+<p>问题5.</p>
+<ul>
+<li>A. spams （垃圾邮件）</li>
+<li>B. malwares （恶意软件）</li>
+<li><font color="red">C. worms （蠕虫）</font></li>
+<li>D. programs （程序）</li>
+</ul>
+</blockquote>
+<p><strong>3.交换机基本配置</strong></p>
+<blockquote>
+<p>numbers of topology changes 频繁变化，说明网络一直不稳定，可能的原因是网络上某个端口链路属性频繁变化。</p>
+</blockquote>
+<h2 id="三月三十日"><a href="#三月三十日" class="headerlink" title="三月三十日"></a>三月三十日</h2><hr>
+<p><strong>1.程序编码</strong></p>
+<blockquote>
+<p>Python 语言的特点不包括<font color="red"><strong>（编译型）</strong></font><br>Python 语言主要由以下9个特点：</p>
+<ul>
+<li>（1）简单易学</li>
+<li>（2）面向对象：Python 既支持面向过程编程，也支持面向对象编程。</li>
+<li>（3）可移植性：由于 Python 的开源本质，它已经被移植在许多平台上。</li>
+<li>（4）解释性</li>
+<li>（5）开源</li>
+<li>（6）高级语言：Pyhton 是高级语言，动态编程是高级编程语言的一个类别。</li>
+<li>（7）可扩展性</li>
+<li>（8）丰富的库</li>
+<li>（9）规范的代码</li>
+</ul>
+</blockquote>
+<p><strong>2.报文摘要</strong></p>
+<blockquote>
+<p>MD5、SHA 属于<strong>报文摘要算法</strong><br>加密分为对称加密和非对称加密。<br>常见<strong>对称加密算法</strong>有：<strong>DES、3DES、IDEA、RC、AES</strong><br><strong>数字签名</strong>也使用到了<strong>非对称加密机制</strong>，常见的<strong>非对称加密算法</strong>有：<strong>RSA、DSA</strong><br><strong>报文摘要算法</strong>也称为<strong>哈希算法</strong>，常见的算法有 <strong>MD5 和 SHA</strong>，其用于认证。</p>
+</blockquote>
+<p><strong>3.TCP协议</strong></p>
+<blockquote>
+<p>TCP 采用拥塞窗口（cwnd）进行拥塞控制。以下关于 cwnd 的说法中正确的是（<font color="red"><strong>D、cwnd 值存放在本地</strong></font>）</p>
+<ul>
+<li>A. 首部中的窗口段存放 cwnd 的值（<font color="blue"><strong>首部中的窗口段存放接收窗口的值，而非拥塞窗口的值。</strong></font>）</li>
+<li>B. 每个段包含的数据只要不超过 cwnd 值就可以发送了（<font color="blue"><strong>每个段包含的数据，应该是本端拥塞窗口及对端接收窗口中所取的最小值</strong></font>）</li>
+<li>C. cwnd 值由对方指定（<font color="blue"><strong>拥塞窗口由本端确定而非对端</strong></font>）</li>
+<li><font color="red"><strong>D. cwnd 值存放在本地</strong></font></li>
+</ul>
+</blockquote>
+<p><strong>4.常见的网络互连设备</strong></p>
+<blockquote>
+<p>路由器 Console 端口使用专用连线直接连接至计算机的串口，对路由器进行本地设置。<br>路由器 AUX 端口为异步端口，主要用于远程设置，也可用于拨号连接，还可通过收发器和 Modem 进行连接。<br>高速同步串口主要用于连接 DDN、帧中继、X.25 和 PSTN 等网络。这种同步端口所连接的网络的两端都需求实时同步。<br>SFP (small form-factor pluggable，小型机架可插拔设备) 端口用于安装SFP模块，该模块能够将电、光信号进行转换，可用于连接光纤通道。</p>
+</blockquote>
+<p><strong>5.DHCP工作原理</strong></p>
+<blockquote>
+<p>当客户端收到多个 DHCP 服务器的响应时，客户端会选择<strong>最先到达的</strong>地址作为自己的 IP 地址。</p>
+</blockquote>
+<h2 id="三月二十九日"><a href="#三月二十九日" class="headerlink" title="三月二十九日"></a>三月二十九日</h2><hr>
+<p><strong>1.数字签名</strong></p>
+<blockquote>
+<p>为实现消息的不可否认性，A 发送给 B 的消息需使用（<font color="red">A 的私钥</font>）进行数字签名。<br>数字签名是基于非对称加密体制的，使得 A 向 B 发送签了名的消息，其作用有：  </p>
+<ul>
+<li>B 可以验证消息 P 是由 A 发送的（验证发送方身份）</li>
+<li>A 不能不认发送过消息 P （不可抵赖）</li>
+<li>B 不能编造或改变消息 P （完整性得到保证）</li>
+</ul>
+<p>因此发送方 A 会使用自己的私钥进行签名。<br><img src="/../images/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D.png" alt="数字签名"></p>
+</blockquote>
+<p><strong>2.IPv4数据报</strong></p>
+<blockquote>
+<p>IP 数据报的分段和重装配要用到报文头部的报文 ID、数据长度、段偏置值和 M 标志4个字段，其中（段偏置值）的作用是指示每一分段在原报文中的位置；若某个段是原报文的最后一个分段，其（M 标志）值为“0”。<br>解析：<br>片便宜：占13位。较长的分组在分片后，某片在原分组中的相对位置。相对于用户数据字段的起点，该片从何处开始。片偏移以8个字节为偏移单位。这就是说，每个分片的长度一定是8字节的整数倍。<br>标志字段中的最低位记为 MF。MF = 1 表示后面“还有分片”的数据报。MF = 0 表示这已是若干数据报片中的最后一个。<br>IP 首部各字段的含义如下：</p>
+<ul>
+<li>1、版本指 IP 协议的版本。</li>
+<li>2、报头长度，指报头的字节数，最常用的报头长度为20位  </li>
+<li>3、区分服务（服务类型），在一般情况下都不使用这个字段。</li>
+<li>4、总长度指报头和数据之和的长度，单位是字节。总长度字段为16位，故 IP 数据报的最大长度为 65535 。</li>
+<li>5、标识，当数据报进行分片处理后，每个分片的标识值都与原数据报的标识值相同，则在接收端具有相同标识值的分片就能最终正确的重装称为原来的数据报。</li>
+<li>6、标志，占3位，但目前只有两位有意义。<br>最低位记为 MF 。MF = 1 即表示后面“还有分片”的数据包。MF = 0 表示这已是若干数据包片中的最后一个。中间位记为 DF ，意思是“不能分片”。只有当 DF = 0 时才允许分片。</li>
+<li>7、片偏移表示每个数据报的分片在原数据报中的相对位置。</li>
+<li>8、生存时间表示数据报在网络中的寿命。现在以跳数为单位，目前的最大数据为255。</li>
+<li>9、协议指出此数据报携带的数据是使用何种协议，以便使目的主机的 IP 层知道应将数据部分上交给那个处理过程。</li>
+<li>10、首部校验和字段只校验数据报的报头，但不包括数据部分。</li>
+<li>11、源地址表示发送方的源 IP</li>
+<li>12、目的地址表示接收方的目的 IP</li>
+</ul>
+</blockquote>
+<h2 id="三月二十八日"><a href="#三月二十八日" class="headerlink" title="三月二十八日"></a>三月二十八日</h2><hr>
+<p><strong>1.产权人确定</strong></p>
+<blockquote>
+<p>构成我国保护计算机软件著作权的两个基本法律文件是《中华人民共和国著作权法》和《计算机软件保护条例》。<br>《计算机软件保护条例》：该《条例》分总则、软件著作权、软件著作权的许可使用和转让、法律责任、附则5章33条。<br>《中华人民共和国著作权法》：1990年9月7日，第七届全国人民代表大会常务委员会第十五次会议通过《中华人民共和国著作权法》。</p>
+</blockquote>
+<p><strong>2.WIFI安全</strong></p>
+<blockquote>
+<p>WLAN 接入安全控制中，采用的安全措施不包括<font color="red">CA认证</font><br>WLAN 接入安全控制中，采用的安全措施有；<br>更改默认设置<br>更新 AP 的 Firmware<br>屏蔽 SSID 广播<br>加密和认证<br>MAC 地址过滤  </p>
+<hr>
+<p>点拨：WLAN安全提供了WEP、WPA、WPA2等安全策略机制。WEP使用共享秘钥认证用户和加密业务报文，但易被破解，安全性低，不建议使用。</p>
+</blockquote>
+<h2 id="三月二十七日"><a href="#三月二十七日" class="headerlink" title="三月二十七日"></a>三月二十七日</h2><hr>
+<p><strong>1.SNMP协议工作原理</strong></p>
+<blockquote>
+<p>SNMP采用UDP的方式传输，SNMP使用的端口号是161来发送请求和应答，SNMP trap使用的端口号是162</p>
+</blockquote>
+<p><strong>2.逻辑网络设计</strong></p>
+<blockquote>
+<p>以下关于层次化网络设计的叙述汇中，错误的是（<font color="red">B</font>）</p>
+<ul>
+<li>A.核心层实现数据分组从一个区域到另一个区域的高速转发</li>
+<li><font color="red">B.接入层应提供丰富接口和多条路径来缓解通信瓶颈</font></li>
+<li>C.汇聚层提供接入层之间的互访</li>
+<li>D.汇聚层通常进行资源的访问控制</li>
+</ul>
+<p><strong>接入层不考虑多路径选择</strong></p>
+</blockquote>
+<p><strong>3.无线局域网标准</strong></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>标准</th>
+<th>运行频段</th>
+<th align="center">主要技术</th>
+<th align="center">数据速率</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>802.11</td>
+<td>2.4 GHz 的 ISM 频段</td>
+<td align="center">扩频通信技术</td>
+<td align="center">1 Mbps 和 2 Mbps</td>
+</tr>
+<tr>
+<td>802.11b</td>
+<td>2.4 GHz 的 ISM 频段</td>
+<td align="center">HR-DSSS 技术</td>
+<td align="center">11 Mbps</td>
+</tr>
+<tr>
+<td>802.11a</td>
+<td>5 GHz U-NII 频段</td>
+<td align="center">OFDM 调制技术</td>
+<td align="center">54 Mbps</td>
+</tr>
+<tr>
+<td>802.11g</td>
+<td>2.4 GHz 的 ISM 频段</td>
+<td align="center">OFDM 调制技术</td>
+<td align="center">54 Mbps</td>
+</tr>
+<tr>
+<td>802.11n</td>
+<td>2.4 GHz 和 5 GHz</td>
+<td align="center">MIMO 和 OFDM</td>
+<td align="center">600 Mbps</td>
+</tr>
+<tr>
+<td>802.11ac</td>
+<td>5 GHz</td>
+<td align="center">MIMO 和 OFDM</td>
+<td align="center">1 Gbps</td>
+</tr>
+</tbody></table>
+</blockquote>
+<p><strong>4.网络层协议&gt;QOS</strong></p>
+<blockquote>
+<p>IntServ主要解决的问题时在发生拥塞时如何共享可以的网络带宽，为保证服务质量提供必要的支持。IntServ通过4种手段来提供QoS传输机制。<br>1.准入控制。IntServ对一个新的QoS通信流要进行资源预约。如果网络中的路由器确定没有足够的资源来保证所请求的QoS，则这个通信流就不会进入网络。<br>2.路由选择算法。可以基于许多不同的QoS参数（而不仅仅是最小时延）来进行路由选择。<br>3.排队规则。考虑不同通信流的不同需求而采用有效的排队规则。<br>4.丢弃策略。在缓冲区耗尽而新的分组来到时要决定丢弃哪些分组以支持QoS传输。</p>
+</blockquote>
+<h2 id="三月二十六日"><a href="#三月二十六日" class="headerlink" title="三月二十六日"></a>三月二十六日</h2><hr>
+<p><strong>1.Windows网络配置命令</strong></p>
+<blockquote>
+<ul>
+<li>ipconfig /all：显示本机TCP/IP配置的详细信息；</li>
+<li>ipconfig /release：DHCP客户端手工释放IP地址；</li>
+<li>ipconfig /renew：DHCP客户端手工向服务器刷新请求；</li>
+<li>ipconfig /flushdns：清除本地DNS缓存内容；</li>
+<li>ipconfig /displaydns：显示本地DNS内容；</li>
+<li>ipconfig /registerdns：DNS客户端手工向服务器进行注册。</li>
+</ul>
+</blockquote>
+<p><strong>2.OSI参考模型的层次结构</strong></p>
+<blockquote>
+<p>传输层：任务是根据通信子网的特性，最佳的利用网络资源，并以可靠和经济的方式为两个端系统之间建立一条传输连接，透明的传输报文。<br>在OSI参考模型中，传输层处理的数据单位是<font color="red">报文</font>。 </p>
+</blockquote>
+<p><strong>3.简单网络管理协议SNMP</strong></p>
+<blockquote>
+<p>SNMP trap是由被管理的设备主动的向管理服务器发送设备的<strong>异常情况</strong>。</p>
+</blockquote>
+<p><strong>4.HDLC协议</strong></p>
+<blockquote>
+<p>HDLC有三种不同类型的帧：<font color="red">信息帧（I帧）</font>、<font color="blue">监控帧（S帧）</font>和<font color="green">无编号帧（U帧）</font>。<br><strong>信息帧</strong>用于传送用户数据。<strong>监控帧</strong>用来差错控制和流量控制。<strong>无编号帧</strong>用于提供对链路的建立、拆除以及多种控制功能。<br>点拨：S帧共有4种不同的编码：00–接受就绪（RR）、01–拒绝（REJ）、10–接收未就绪（RNR）、11–选择拒绝（SREJ）</p>
+</blockquote>
+<h2 id="三月二十五日"><a href="#三月二十五日" class="headerlink" title="三月二十五日"></a>三月二十五日</h2><hr>
+<p><strong>1.加密技术</strong></p>
+<blockquote>
+<p>DES算法：加密前，对明文进行分组，每组64位数据，对每一个64位的数据进行加密，产生一组64位的密文，最后把各组的密文串接起来，得出整个密文，其中秘钥为64位<font color="red">（实际<strong>56</strong>位，有8位用于校验）</font></p>
+</blockquote>
+<p><strong>2.PGP协议</strong></p>
+<blockquote>
+<p>MIME即多用途互联网右键扩展，是目前互联网电子邮件普遍遵循的邮件技术规范。在MIME出现之前，互联网电子邮件主要遵循由RFC 822所制定的标准，电子邮件一般只用来传递基本的ASCLL码文本信息，MIME在RFC 822的基础上对电子邮件规范做了大量的扩展，引入了新的格式规范和编码方式，在MIME的支持下，图像、声音、动画等二进制文件都可方便的通过电子邮件来进行传递，极大地丰富了电子邮件的功能。目前互联网上使用的基本都是遵循MIME规范的电子邮件。<br>下述协议中与<font color="red"><strong>安全</strong></font>电子邮箱服务无关的是（C. MIME）</p>
+<ul>
+<li>A.SSL</li>
+<li>B.HTTPS</li>
+<li><font color="red"><strong>C.MIME</strong></font></li>
+<li>D.PGP</li>
+</ul>
+</blockquote>
+<p><strong>3.SNMP报文类型</strong></p>
+<blockquote>
+<p>SNMP协议中网管代理使用<font color="red">trap</font><br>SNMP使用的是无连接的UDP协议，因此在网络上传输SNMP报文的开销很小，但UDP是不保证可靠交付的。同时SNMP使用UDP的方法有些特殊，在运行<font color="blue">代理程序</font>的服务器端用<font color="red">161</font>端口来接受<font color="green">Get或Set报文和发送响应报文</font>（客户端使用临时端口），但运行<font color="blue">管理程序</font>的客户端则使用熟知端口<font color="red">162</font>来<font color="green">接收来自各代理的Trap报文</font>。</p>
+</blockquote>
+<h2 id="三月二十四日"><a href="#三月二十四日" class="headerlink" title="三月二十四日"></a>三月二十四日</h2><hr>
+<p><strong>1.OSPF路由协议</strong></p>
+<blockquote>
+<p>OSPF路由协议属于<font color="red">链路状态路由协议</font>，支持子网掩码及区域划分，适合于中大规模的网络。当网络规模较大时，可划分多个OSPF区域，其中必须要有的区域为<strong>area 0，也称之为骨干区域</strong>，其它区域需要和area 0<strong>直连</strong>。<br>同一路由器上可运行多个OSPF协议，需要通过进程号加以区分。<br>OSPF路由器会周期性（默认10秒）的从其启动OSPF协议的每一个接口以<strong>组播地址224.0.0.5发送HELLO包</strong>，以寻找和维护邻居关系。</p>
+</blockquote>
+<p><strong>2.网络服务器配置</strong></p>
+<blockquote>
+<p>在Windows系统的服务项中，<font color="red"><strong>Workstaion</strong></font>服务使用SMB协议创建并维护客户端网络与远程服务器之间的连接。<br><strong>SuperFetch</strong>是Windows Vista中引入的一项功能。它静置于后台，不断分析RAM使用模式，并了解您最常运行的应用程序类型。随着时间的推移，SuperFetch将这些应用程序标记为“经常使用”，并提前将他们预加载到RAM中。<br><strong>关闭Windows Search的结果</strong>：Windows中的所有搜索框都将消失，其中包括Windows资源管理器、“开始”菜单、控制面板、文档库以及其他库中的搜索框，依赖于Windows Search的程序可能无法正常运行。<br><strong>Workstation服务</strong>：创建和维护到远程服务的客户端网络连接。如果服务器停止，这些连接将不可用。如果服务被禁用，任何直接依赖于此服务的服务将无法启动。</p>
+</blockquote>
+<p><strong>3.WIFI安全</strong></p>
+<blockquote>
+<p>IEEEE 802.11i标准制定的无线网络加密协议<font color="red">WPA</font>是一个基于<font color="red">TKIP</font>算法的加密方案。<br>WPA协议是一种保护无线网络（WIFI）安全的系统，它是在前一代有线等效加密（wep）的基础上产生的，解决了遣人wep的缺陷问题，它使用tkip（临时秘钥完整性）协议，是IEEE 802.11i标准中的过渡方案。</p>
+</blockquote>
+<p><strong>4.关于RIP和OSPF对比</strong></p>
+<blockquote>
+<ul>
+<li>RIP定时发布路由信息，而OSPF在网络拓扑发生变化时发布路由信息。</li>
+<li>RIP的路由信息发送给邻居，而OSPF路由信息发送给整个网络路由器。  </li>
+<li>RIPV1采用广播方式发送路由表，RIPV2增加了组播方式，而OSPF是组播。</li>
+<li>RIP和OSPF均为内部路由协议</li>
+</ul>
+</blockquote>
+<p><strong>5.TCP协议</strong></p>
+<blockquote>
+<p>主机甲向主机乙发送一个TCP报文段，SYN字段为“1”，序列号字段的值为2000，若主机乙同意建立连接，则发送给主机甲的报文段可能为<font color="red"><strong>(SYN=1,ACK=1,seq=2001 ack=2001)</strong></font>，若主机乙不同意连接，则<font color="red"><strong>RST</strong></font>字段置“1”。<br>同步SYN：在连接建立时同步需要。SYN=1,ACK=0,表明是在连接请求，如果SYN=1,ACK=1,表面同意建立连接。<br><strong>RST表示拒绝连接，FIN表示释放连接</strong></p>
+</blockquote>
+<h2 id="三月二十三日"><a href="#三月二十三日" class="headerlink" title="三月二十三日"></a>三月二十三日</h2><hr>
+<p><strong>1.OSPF路由协议</strong></p>
+<blockquote>
+<p><font color="red">OSPF协议中<font color="blue"><strong>DR</strong></font>的作用范围是<font color="blue"><strong>一个网段</strong></font></font>。<br>DR即指定路由器，负责在广播多路网络建立和维护邻接关系并交换链路状态信息，其他路由器之间不直接交换链路状态信息，这样就大大减少了MA网络中的邻接关系数据及交换链路状态信息消耗的资源。<br>DR一旦出现故障，其与其他路由器之间的邻接关系将全部失效，链路状态数据库也无法同步，此时就需要重新选举DR、再与非DR路由器建立邻接关系，完成LSA的同步，为了规避单点故障风险，通过选举备份指定路由器BDR，在DR失效时快速接管DR的工作。</p>
+</blockquote>
+<p><strong>2.SSL协议</strong></p>
+<blockquote>
+<p><strong>传输层</strong>安全性协议<strong>TLS</strong>及其前身安全套接层<strong>SSL</strong>是一种安全协议，目的是为互联网通信提供安全及数据完整性保障。</p>
+</blockquote>
+<p><strong>3.寻址方式</strong></p>
+<blockquote>
+<p>在指令系统的各种寻址方式中，获取操作数最快的方式是<font color="red">立即寻址</font>。<br><strong>立即寻址</strong>：操作数直接存放在指令的地址码汇总。此方式从指令中获取操作数最快。</p>
+</blockquote>
+<p><strong>4.Linux系统Apache服务配置</strong></p>
+<blockquote>
+<p>Apache的主配置文件：<font color="grenn"><strong>/etc/httpd/conf/httpd.conf</strong></font><br>默认站点主目录：<font color="grenn"><strong>/var/www/html/</strong></font> </p>
+</blockquote>
+<h2 id="三月二十二日"><a href="#三月二十二日" class="headerlink" title="三月二十二日"></a>三月二十二日</h2><hr>
+<p><strong>1.数字编码与编码效率</strong></p>
+<blockquote>
+<p><strong>4B/5B</strong>这种编码特点是欲将发送的数据流每4bit作为一个组，然后按照4B/5B编码规则将其转换成相应<strong>5bit码</strong>，并且由<strong>NRZI</strong>方式传输。典型代表<strong>100BASE-FX</strong>。  </p>
+</blockquote>
+<p><strong>2.软件测试</strong></p>
+<blockquote>
+<p><strong>验收测试</strong>是部署软件之前的最后一个测试操作。在软件产品完成了单元测试、集成测试和系统测试之后，产品发布之前所进行的软件测试活动。它是技术测试的最后一个阶段，也称为交付测试。验收测试目的是确保软件准备就绪，并且可以让最终用户将其用于执行软件的既定功能和任务。<br><strong>单元测试（unit testing）</strong>，是指对软件中最小可测试单元进行检查和验证。<br><strong>集成测试</strong>，也叫组装测试或联合测试。在单元测试的基础上，将所有模块按照设计要求（如根据结构图）组装成为子系统或系统，进行集成测试。<br><strong>系统测试（System Testing）</strong>，是对整个系统的测试，将硬件、软件、操作人员看作一个整体，检验它是否有不符合系统说明书的地方。  </p>
+</blockquote>
+<p><strong>Windows系统WEB站点配置</strong></p>
+<blockquote>
+<p><strong>IIS组件无法搭建DNS服务。</strong><br>在Windows Server2008中，可以使用IIS搭建<font color="red">WEB</font>、<font color="red">SMTP</font>、<font color="red">FTP</font>服务器。  </p>
+</blockquote>
+<p><strong>接入网技术HFC</strong></p>
+<blockquote>
+<p>HFC是将光缆敷设到小区，然后通过光电转换结点，利用有线电视CATV的总线式同轴电缆连接到用户，提供综合电信业务的技术。这种方式可以充分利用CATV原有的网络。</p>
+</blockquote>
+<p><strong>RIP路由协议</strong></p>
+<blockquote>
+<p>RIPv2对RIPV1协议的改进之一为路由器有选择地将路由表中的信息发送给邻居，而不是发送整个路由表。具体的说，一条路由信息不会被发送给该信息的来源，这种方案称为<font color="red"><strong>水平分割法</strong></font>，其作用是<font color="red"><strong>解决路由环路</strong></font>。<br>1：<strong>水平分割（Split Horizon）</strong>指的是RIP从某个接口接收到的路由信息，不会从该接口再发给邻居设备。这样不但减少了带宽消耗，还可以防止路由环路。在华为设备上，水平分割功能默认情况下是开启的。<br>2：<strong>触发更新（Triggered Updates）</strong>的原理是，当路由信息发生变化时，运行RIP的设备会立即向邻居设备发送更新报文，而不必等待定时更新，从而缩短了网络的收敛时间，在华为设备上没有命令能主动关闭触发更新的功能。<br>3：毒性逆转（Poison Reverse）指的是RIP从某个接口接收路由信息后，将该路由的开销值设置为16（即该路由不可达），并从原接口发回邻居设备。利用这种方式，可以清除对方路由表中的无用路由。如果同时都配置了毒性逆转和水平分割，水平分割行为会被毒性逆转行为代替。在华为设备上，毒性逆转功能默认情况下是关闭的，需要手动打开此功能。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_57636278/article/details/120901178">https://blog.csdn.net/weixin_57636278/article/details/120901178</a></p>
+</blockquote>
+<h2 id="三月二十一日"><a href="#三月二十一日" class="headerlink" title="三月二十一日"></a>三月二十一日</h2><hr>
+<p><strong>1.密码技术</strong></p>
+<blockquote>
+<p>AES是一种<font color="red"><strong>分组加密算法</strong></font>。<br>AES使用几种不同的方法来执行排列和置换运算。AES是一个迭代的、对称秘钥分组的密码，它可以使用128、192和256位秘钥。<em>而流密码就是明文和秘钥的长度一致，——进行异或运算。</em></p>
+</blockquote>
+<p><strong>2.操作系统</strong></p>
+<blockquote>
+<p>AIX属于Unix系统；CentOS、红旗、中标麒麟属于Linux系统。</p>
+</blockquote>
+<p><strong>3.逻辑网络设计</strong></p>
+<blockquote>
+<p>三层网络设计方案中部分功能：不同区域的高速数据转发（<strong>核心层</strong>）、用户认证、计费管理（<strong>接入层</strong>）、终端用户接入网络（<strong>接入层</strong>）、实现网络的访问策略控制（<strong>汇聚层</strong>）。</p>
+</blockquote>
+<p><strong>4.常见的网络互连设备</strong></p>
+<blockquote>
+<p>路由器与计算机串行接口连接，利用虚拟终端对路由器进行本地配置的接口是（<font color="red"><strong>Console口</strong></font>），路由器通过光纤连接广域网接口是（<font color="red"><strong>STP端口</strong></font>）<br><strong>路由器Console端口</strong>使用专用连线直接连接至计算机的串口，对路由器进行本地设置。<br><strong>路由器AUX端口为异步端口</strong>，主要用于远程设置，也可用于拨号连接，还可通过收发器和Modem进行连接。<br><strong>高速同步串口</strong>主要用于连接DDN、帧中继、X.25和PSTN等网络。这种同步端口一般需求速率非常高，因为一般来说通过这种端口所连接的网络的两端都需求实时同步。<br><strong>STP(small form-factor pluggable,小型机架可插拔设备)端口</strong>用于安装SFP模块，该模块能够将电、光信号进行转换，可用于连接光纤通道。</p>
+</blockquote>
+<h2 id="三月二十日"><a href="#三月二十日" class="headerlink" title="三月二十日"></a>三月二十日</h2><hr>
+<p><strong>1.GVRP的概念</strong>  </p>
+<blockquote>
+<p>GVRP协议所支持的VLANID范围为<font color="red">1-4094</font>，而VTP协议只支持<font color="red">1-1001</font>。  </p>
+</blockquote>
+<p><strong>2.CSMA/CA协议</strong>  </p>
+<blockquote>
+<p>工作站在传送信息前，必须侦测传输媒体连续空闲一段时间后才能传送信息，这一段空闲的时间称为帧间间隔（IFS），802.11中定义了SIFS、PIFS、DIFS及EIFS四种不同长短的IFS，时间长度为<font color="red">SIFS&lt;PIFS&lt;DIFS&lt;EIFS</font>。时间越短优先级越高，一但工作站用较短的信息间隔来使用传输媒体后，其他的工作站便不能传送信息，所以相对形成四种优先级以提供传送不同种类通信之用。<br>DIFS:分布式协调IFS:最长的IFS，优先级最低，用于异步帧竞争访问的时延。<br>PIFS:点协调IFS，中等长度的IFS，优先级居中，在PCF操作中使用。<br>SIFS:短IFS,最短的IFS，优先级最高，用于需要立即相应的操作。<br>其中SIFS用在RTS/CTS机制中。  </p>
+</blockquote>
+<h2 id="三月十九日"><a href="#三月十九日" class="headerlink" title="三月十九日"></a>三月十九日</h2><hr>
+<p><strong>1.FTP文件传输协议</strong> </p>
+<blockquote>
+<p>FTP服务器使用TCP的20和21两个网络端口与FTP客户端进行通信。<br>FTP服务器的21端口用于传输FTP的控制命令，20端口用于传输文件数据。  </p>
+</blockquote>
+<p><strong>2.OSPF路由协议</strong> </p>
+<blockquote>
+<p>在一个AS内部传递更新的IGP路由协议有<font color="Blue">RIP,EIGP,OSPF,IS-IS,</font>可以在AS之间传递更新的路由协议目前只有<font color="Blue">BGP4</font>。  </p>
+</blockquote>
+<p><strong>3.PCM脉冲编码调制技术</strong><br>假设模拟信号的频率为10~16MHz，采样频率必须大于（<font color="red"><strong>32MHz</strong></font>）时，才能使得到的样本信号不失真。</p>
+<blockquote>
+<p>奈奎斯特取样定理：如果取样速率大于模拟信号最好频率的<strong>两倍</strong>，则可以用得到的样本恢复原来的模拟信号。  </p>
+</blockquote>
+<p><strong>4.CSMA/CD协议</strong></p>
+<blockquote>
+<p>CSMA/CD协议是介质访问子层协议  </p>
+</blockquote>
+<p><strong>5.逻辑网络设计</strong></p>
+<blockquote>
+<p>在网络分层设计中，由于核心层、汇聚层、接入层的功能不同，不同层次选用的交换机也有区别。<br><font color="red"><strong>核心层</strong></font>的作用是尽可能快的交换数据包，构成高速的交换骨干，所以核心层交换机的背板带宽，转发速率尽可能快，另外，核心层可靠性要求较高，所以一般都要求<strong>电源冗余</strong>。<br><font color="Blue"><strong>汇聚层</strong></font>主要提供<strong>地址的聚焦</strong>，<strong>部门和工作组的接入</strong>，<font color="blue">广播域</font>、<strong>组播传输域的定义</strong>，<strong>VLAN分割</strong>，<strong>介质转换和安全控制等功能</strong>。它是多台接入层交换机的汇聚点，它必须能够处理来自接入层设备的所有通信量，并提供到核心层的上行链路，因此汇聚层交换机与接入层交换机比较，需要<strong>更高的性能、更少的接口和更高的交换速率</strong>。<br><font color="grenn"><strong>接入层</strong></font>实现终端用户连接到网络，因此接入层交换机具有低成本和高端口密度特性。</p>
+</blockquote>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Zhang</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://0bigbug.github.io/2023/03/19/san-yue-mei-ri-yi-ti/">https://0bigbug.github.io/2023/03/19/san-yue-mei-ri-yi-ti/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Zhang</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/">
+                                    <span class="chip bg-color">网络工程师</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'ANO16eGh1QCBLmM6EuNCSKOx-gzGzoHsz',
+        appKey: 'Z6gG9XN7LHBSYAUoMUkraMP1',
+        serverURLs: 'https://ano16egh.lc-cn-n1-shared.com',
+        notify: 'true' === 'true',
+        verify: 'true' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '留下你的评论吧'
+    });
+</script>
+
+<!--酷Q推送-->
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/03/19/wang-luo-gong-cheng-shi-zhi-shi-dian-zong-jie/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="网络工程师知识点总结">
+                        
+                        <span class="card-title">网络工程师知识点总结</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-19
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Zhang
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/">
+                        <span class="chip bg-color">网络工程师</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/03/19/han-shu-ji-xian-lian-xu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="函数、极限、连续">
+                        
+                        <span class="card-title">函数、极限、连续</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Zhang
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%AB%98%E6%95%B0/">
+                        <span class="chip bg-color">高数</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="685942127"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+            
+
+                <div class="container row center-align" style="margin-bottom: 0px !important;">
+                    <div class="col s12 m8 l8 copy-right">
+                        Copyright&nbsp;&copy;
+                        
+                            <span id="year">2019-2023</span>
+                            
+                                    <a href="/about" target="_blank">
+                                        zhang
+                                    </a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;
+                                    <a href="https://github.com/0bigbug/0bigbug.github.io" target="_blank">Matery</a>
+                                    
+                                            <br>
+                                            
+                                                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;
+                                                站点总字数:&nbsp;<span class="white-color">
+                                                        34.9k
+                                                    </span>
+                                                    
+                                                        
+                                                            
+                                                                
+                                                                    
+                                                                        
+                                                                            <span id="busuanzi_container_site_pv">
+                                                                                &nbsp;|&nbsp;<i
+                                                                                    class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                                                                                    <span id="busuanzi_value_site_pv"
+                                                                                        class="white-color"></span>
+                                                                            </span>
+                                                                            
+                                                                                
+                                                                                    <span id="busuanzi_container_site_uv">
+                                                                                        &nbsp;|&nbsp;<i
+                                                                                            class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                                                                                            <span
+                                                                                                id="busuanzi_value_site_uv"
+                                                                                                class="white-color"></span>
+                                                                                    </span>
+                                                                                    
+                                                                                        <br>
+
+                                                                                        <!-- 运行天数提醒. -->
+                                                                                        
+                                                                                                <br>
+                                                                                                
+                    </div>
+                    <div class="col s12 m4 l4 social-link social-statis">
+                        
+    <a href="https://github.com/0bigbug/0bigbug.github.io" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+    
+
+        
+            <a href="mailto:1753998700@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+                <i class="fas fa-envelope-open"></i>
+            </a>
+            
+
+                
+
+                        
+
+                                
+                                    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1753998700" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1753998700" data-position="top" data-delay="50">
+                                        <i class="fab fa-qq"></i>
+                                    </a>
+                                    
+
+                                        
+
+                                                
+
+                                                        
+                                                                
+                                                                    <a href="" class="tooltipped" target="_blank" data-tooltip="添加我的微信" data-position="top" data-delay="50">
+                                                                        <i class="fab fa-weixin"></i>
+                                                                    </a>
+                                                                    
+                    </div>
+                </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
+            }
+        </script>
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>

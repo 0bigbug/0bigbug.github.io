@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Zhang&#39;s blog</title>
+  
+  <subtitle>Zhang</subtitle>
+  <link href="https://0bigbug.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://0bigbug.github.io/"/>
+  <updated>2023-06-27T09:05:05.221Z</updated>
+  <id>https://0bigbug.github.io/</id>
+  
+  <author>
+    <name>Zhang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>相对你说的一些话</title>
+    <link href="https://0bigbug.github.io/2023/06/27/xiang-dui-ni-shuo-de-yi-xie-hua/"/>
+    <id>https://0bigbug.github.io/2023/06/27/xiang-dui-ni-shuo-de-yi-xie-hua/</id>
+    <published>2023-06-27T09:05:05.000Z</published>
+    <updated>2023-06-27T09:05:05.221Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux</title>
+    <link href="https://0bigbug.github.io/2023/06/08/linux/"/>
+    <id>https://0bigbug.github.io/2023/06/08/linux/</id>
+    <published>2023-06-08T12:46:46.000Z</published>
+    <updated>2023-06-19T02:18:26.964Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;问题一：&quot;&gt;&lt;a href=&quot;#问题一：&quot; class=&quot;headerlink&quot; title=&quot;问题一：&quot;&gt;&lt;/a&gt;问题一：&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;该错误在做到发布多个网站的时候，重启 httpd</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="https://0bigbug.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机操作系统期末复习</title>
+    <link href="https://0bigbug.github.io/2023/06/06/ji-suan-ji-cao-zuo-xi-tong-qi-mo-fu-xi/"/>
+    <id>https://0bigbug.github.io/2023/06/06/ji-suan-ji-cao-zuo-xi-tong-qi-mo-fu-xi/</id>
+    <published>2023-06-06T12:17:36.000Z</published>
+    <updated>2023-06-07T13:29:26.121Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;简答题&quot;&gt;&lt;a href=&quot;#简答题&quot; class=&quot;headerlink&quot; title=&quot;简答题&quot;&gt;&lt;/a&gt;简答题&lt;/h1&gt;&lt;h2 id=&quot;1、什么是抖动现象？产生抖动的原因是什么&quot;&gt;&lt;a href=&quot;#1、什么是抖动现象？产生抖动的原因是什么&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="计算机操作系统" scheme="https://0bigbug.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>历年真题模拟</title>
+    <link href="https://0bigbug.github.io/2023/05/10/li-nian-zhen-ti-mo-ni/"/>
+    <id>https://0bigbug.github.io/2023/05/10/li-nian-zhen-ti-mo-ni/</id>
+    <published>2023-05-10T07:49:52.000Z</published>
+    <updated>2023-06-06T12:52:55.732Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2023年上半年上午真题&quot;&gt;&lt;a href=&quot;#2023年上半年上午真题&quot; class=&quot;headerlink&quot; title=&quot;2023年上半年上午真题&quot;&gt;&lt;/a&gt;2023年上半年上午真题&lt;/h1&gt;&lt;h1 id=&quot;2022年下半年上午真题&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="网络工程师" scheme="https://0bigbug.github.io/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>English</title>
+    <link href="https://0bigbug.github.io/2023/05/10/english/"/>
+    <id>https://0bigbug.github.io/2023/05/10/english/</id>
+    <published>2023-05-10T07:39:04.000Z</published>
+    <updated>2023-05-18T11:39:32.471Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;网络用语&quot;&gt;&lt;a href=&quot;#网络用语&quot; class=&quot;headerlink&quot; title=&quot;网络用语&quot;&gt;&lt;/a&gt;网络用语&lt;/h1&gt;&lt;p&gt;DNS（Domain Name System）：域名系统。&lt;/p&gt;
+&lt;p&gt;ASCII 字符编码（American</summary>
+        
+      
+    
+    
+    
+    
+    <category term="网络工程师" scheme="https://0bigbug.github.io/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ensp学习</title>
+    <link href="https://0bigbug.github.io/2023/04/25/ensp-xue-xi/"/>
+    <id>https://0bigbug.github.io/2023/04/25/ensp-xue-xi/</id>
+    <published>2023-04-25T12:13:14.000Z</published>
+    <updated>2023-06-06T12:29:30.634Z</updated>
+    
+    
+    
+    
+    
+    <category term="网络工程师" scheme="https://0bigbug.github.io/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL-injection</title>
+    <link href="https://0bigbug.github.io/2023/04/21/sql-injection/"/>
+    <id>https://0bigbug.github.io/2023/04/21/sql-injection/</id>
+    <published>2023-04-21T10:39:58.000Z</published>
+    <updated>2023-04-22T06:24:31.651Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MySQL数据库&quot;&gt;&lt;a href=&quot;#MySQL数据库&quot; class=&quot;headerlink&quot; title=&quot;MySQL数据库&quot;&gt;&lt;/a&gt;MySQL数据库&lt;/h1&gt;&lt;h2 id=&quot;SQL查讯&quot;&gt;&lt;a href=&quot;#SQL查讯&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="SQL" scheme="https://0bigbug.github.io/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搞机</title>
+    <link href="https://0bigbug.github.io/2023/04/19/gao-ji/"/>
+    <id>https://0bigbug.github.io/2023/04/19/gao-ji/</id>
+    <published>2023-04-19T14:43:19.000Z</published>
+    <updated>2023-05-06T04:59:36.884Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;坚果N1-投影仪（5000）&quot;&gt;&lt;a href=&quot;#坚果N1-投影仪（5000）&quot; class=&quot;headerlink&quot; title=&quot;坚果N1 投影仪（5000）&quot;&gt;&lt;/a&gt;坚果N1 投影仪（5000）&lt;/h1&gt;&lt;h1 id=&quot;小米智能音箱（299）&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="设备" scheme="https://0bigbug.github.io/tags/%E8%AE%BE%E5%A4%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络工程师高频考点</title>
+    <link href="https://0bigbug.github.io/2023/04/14/wang-luo-gong-cheng-shi-gao-pin-kao-dian/"/>
+    <id>https://0bigbug.github.io/2023/04/14/wang-luo-gong-cheng-shi-gao-pin-kao-dian/</id>
+    <published>2023-04-14T10:40:35.000Z</published>
+    <updated>2023-05-18T08:39:48.911Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;上午常考概念&quot;&gt;&lt;a href=&quot;#上午常考概念&quot; class=&quot;headerlink&quot; title=&quot;上午常考概念&quot;&gt;&lt;/a&gt;上午常考概念&lt;/h1&gt;&lt;h2 id=&quot;计算机硬件基础&quot;&gt;&lt;a href=&quot;#计算机硬件基础&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="网络工程师" scheme="https://0bigbug.github.io/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>四月每日一题</title>
+    <link href="https://0bigbug.github.io/2023/04/02/si-yue-mei-ri-yi-ti/"/>
+    <id>https://0bigbug.github.io/2023/04/02/si-yue-mei-ri-yi-ti/</id>
+    <published>2023-04-02T13:22:43.000Z</published>
+    <updated>2023-05-02T11:13:02.522Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;四月每日一题&quot;&gt;&lt;a href=&quot;#四月每日一题&quot; class=&quot;headerlink&quot; title=&quot;四月每日一题&quot;&gt;&lt;/a&gt;四月每日一题&lt;/h1&gt;&lt;h2 id=&quot;四月二十九日&quot;&gt;&lt;a href=&quot;#四月二十九日&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="每日一题" scheme="https://0bigbug.github.io/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/"/>
+    
+    
+    <category term="网络工程师" scheme="https://0bigbug.github.io/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>英语学习</title>
+    <link href="https://0bigbug.github.io/2023/03/21/ying-yu-xue-xi/"/>
+    <id>https://0bigbug.github.io/2023/03/21/ying-yu-xue-xi/</id>
+    <published>2023-03-21T13:13:12.000Z</published>
+    <updated>2023-05-10T11:59:38.625Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;每日单词&quot;&gt;&lt;a href=&quot;#每日单词&quot; class=&quot;headerlink&quot; title=&quot;每日单词&quot;&gt;&lt;/a&gt;每日单词&lt;/h1&gt;&lt;h2 id=&quot;三月二十五&quot;&gt;&lt;a href=&quot;#三月二十五&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="英语" scheme="https://0bigbug.github.io/tags/%E8%8B%B1%E8%AF%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络工程师知识点总结</title>
+    <link href="https://0bigbug.github.io/2023/03/19/wang-luo-gong-cheng-shi-zhi-shi-dian-zong-jie/"/>
+    <id>https://0bigbug.github.io/2023/03/19/wang-luo-gong-cheng-shi-zhi-shi-dian-zong-jie/</id>
+    <published>2023-03-19T09:18:04.000Z</published>
+    <updated>2023-04-14T10:38:35.329Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;网络工程师考试的部分知识点汇总&quot;&gt;&lt;a href=&quot;#网络工程师考试的部分知识点汇总&quot; class=&quot;headerlink&quot; title=&quot;网络工程师考试的部分知识点汇总&quot;&gt;&lt;/a&gt;网络工程师考试的部分知识点汇总&lt;/h1&gt;&lt;h2 id=&quot;1-CPU的组成&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="网络工程师" scheme="https://0bigbug.github.io/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三月每日一题</title>
+    <link href="https://0bigbug.github.io/2023/03/19/san-yue-mei-ri-yi-ti/"/>
+    <id>https://0bigbug.github.io/2023/03/19/san-yue-mei-ri-yi-ti/</id>
+    <published>2023-03-19T09:17:42.000Z</published>
+    <updated>2023-04-14T07:53:42.617Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;三月每日一题&quot;&gt;&lt;a href=&quot;#三月每日一题&quot; class=&quot;headerlink&quot; title=&quot;三月每日一题&quot;&gt;&lt;/a&gt;三月每日一题&lt;/h1&gt;&lt;h2 id=&quot;三月三十一日&quot;&gt;&lt;a href=&quot;#三月三十一日&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="每日一题" scheme="https://0bigbug.github.io/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/"/>
+    
+    
+    <category term="网络工程师" scheme="https://0bigbug.github.io/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>函数、极限、连续</title>
+    <link href="https://0bigbug.github.io/2023/03/19/han-shu-ji-xian-lian-xu/"/>
+    <id>https://0bigbug.github.io/2023/03/19/han-shu-ji-xian-lian-xu/</id>
+    <published>2023-03-19T07:50:31.000Z</published>
+    <updated>2023-04-09T12:35:02.931Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;第一章、函数-极限-连续&quot;&gt;&lt;a href=&quot;#第一章、函数-极限-连续&quot; class=&quot;headerlink&quot; title=&quot;第一章、函数 极限 连续&quot;&gt;&lt;/a&gt;第一章、函数 极限 连续&lt;/h1&gt;&lt;h2 id=&quot;第一节、函数&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="高数" scheme="https://0bigbug.github.io/tags/%E9%AB%98%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://0bigbug.github.io/2023/03/14/hello-world/"/>
+    <id>https://0bigbug.github.io/2023/03/14/hello-world/</id>
+    <published>2023-03-14T10:33:54.676Z</published>
+    <updated>2023-04-14T07:47:29.469Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

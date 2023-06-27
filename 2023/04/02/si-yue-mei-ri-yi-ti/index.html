@@ -1,0 +1,2042 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="四月每日一题, Zhang&#39;s blog">
+    <meta name="description" content="四月每日一题四月二十九日
+1.网络规划和设计
+
+三层网络设设计方案中各层功能：
+核心层：不同区域的高速数据转发
+接入层：用户认证、计费管理
+汇聚层：实现网络的访问策略控制
+
+四月二十六日
+1.数据通信基础
+
+多模光纤的特点是：成本低、宽芯线">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>四月每日一题 | Zhang&#39;s blog</title>
+    <link rel="icon" type="image/png" href="/logo.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Zhang's blog" type="application/atom+xml">
+</head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Zhang&#39;s blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Zhang&#39;s blog</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/0bigbug/0bigbug.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/0bigbug/0bigbug.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">四月每日一题</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/">
+                                <span class="chip bg-color">网络工程师</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/" class="post-category">
+                                每日一题
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-04-02
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-05-02
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    9.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    35 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="四月每日一题"><a href="#四月每日一题" class="headerlink" title="四月每日一题"></a>四月每日一题</h1><h2 id="四月二十九日"><a href="#四月二十九日" class="headerlink" title="四月二十九日"></a>四月二十九日</h2><hr>
+<p><strong>1.网络规划和设计</strong></p>
+<blockquote>
+<p>三层网络设设计方案中各层功能：</p>
+<p>核心层：不同区域的高速数据转发</p>
+<p>接入层：用户认证、计费管理</p>
+<p>汇聚层：实现网络的访问策略控制</p>
+</blockquote>
+<h2 id="四月二十六日"><a href="#四月二十六日" class="headerlink" title="四月二十六日"></a>四月二十六日</h2><hr>
+<p><strong>1.数据通信基础</strong></p>
+<blockquote>
+<p>多模光纤的特点是：成本低、宽芯线、聚光好、耗散大、低效、用于低速度、短距离的通信；</p>
+<p>单模光纤的特点是：成本高、窄芯线、需要激光源、耗散小、高校、用于高速度、长距离的通信。</p>
+</blockquote>
+<h2 id="四月二十五日"><a href="#四月二十五日" class="headerlink" title="四月二十五日"></a>四月二十五日</h2><hr>
+<p><strong>1.协议层次关系</strong></p>
+<blockquote>
+<p><img src="/../images/2023-4.26-1.png"></p>
+<p>snmp,pop3在应用层，udp/tcp在传输层，ip在网络层。</p>
+<p>SNMP 使用无连接的传输服务（UDP），POP3 使用面向连接的传输服务（TCP），网络层都通过IP数据报传送。Telnet 不是使用无连接的传输服务（UDP），而是使用面向连接的传输服务。</p>
+</blockquote>
+<p><strong>2.网络规划和设计</strong></p>
+<blockquote>
+<p>系统功能有清楚的定义，说明需求明确，选择瀑布模型；</p>
+<p>快速开发选择螺旋模型；</p>
+<p>面向对象开发方法选择喷泉模型。</p>
+</blockquote>
+<p><strong>3.数据通信基础</strong></p>
+<blockquote>
+<p>HDLC 是一种<font color="red"><strong>面向比特的同步链路控制</strong></font>协议。</p>
+</blockquote>
+<p><strong>4.编码</strong></p>
+<blockquote>
+<p>100 BASE-T4 采用的编码技术为<font color="gren"><strong>8B/6T</strong></font>，利用<font color="gren"><strong>UTP-3</strong></font>传输介质进行数据传输。</p>
+</blockquote>
+<p><strong>5.RIP 防止环路</strong></p>
+<blockquote>
+<p>水平分割法：一条路由信息不会被发送给该信息的来源；</p>
+<p>带有反向毒化的水平分割方案：把从邻居学习到的路由费用设置成无限大，并立即发送给那个邻居。（效果最好）</p>
+<p>另外，触发更新技术也能加快路由收敛，如果触发更新足够及时，则也可以防止环路的形成。</p>
+</blockquote>
+<h2 id="四月二十四日"><a href="#四月二十四日" class="headerlink" title="四月二十四日"></a>四月二十四日</h2><hr>
+<p><strong>1.网络管理</strong></p>
+<blockquote>
+<p>在磁盘调度管理中，应先进行<font color="red"><strong>移臂调度</strong></font>，再进行<font color="red"><strong>旋转调度</strong></font>。</p>
+</blockquote>
+<p><strong>2.网络安全-防火墙</strong></p>
+<blockquote>
+<p>防火墙工作层次越高，工作效率越低，安全性越高。</p>
+</blockquote>
+<h2 id="四月二十三日"><a href="#四月二十三日" class="headerlink" title="四月二十三日"></a>四月二十三日</h2><hr>
+<p><strong>1.病毒</strong></p>
+<blockquote>
+<p>多型病毒是一种较为高级的病毒，这种病毒在每次感染后会改变自己。</p>
+</blockquote>
+<h2 id="四月二十二日"><a href="#四月二十二日" class="headerlink" title="四月二十二日"></a>四月二十二日</h2><hr>
+<p><strong>1.网络规划和设计</strong></p>
+<blockquote>
+<p>通过 CATV 电缆访问因特网，在用户端必须安装的设备是（ <font color="gren"><strong>Cable Modem（线缆调制解调器）</strong></font> ）。</p>
+</blockquote>
+<p><strong>2.DNS 服务器资源记录</strong></p>
+<blockquote>
+<p>DNS 服务器中主要的资源记录有 <strong>A（域名到 IP 地址的映射）</strong>、<strong>PTR（IP 地址到域名的映射）</strong>、<strong>MX（邮件服务器及其优先级）</strong>、<strong>CNAME（别名）</strong>和 <strong>NS（区域的授权服务器）</strong>等类型。</p>
+</blockquote>
+<p><strong>3.数据通信基础</strong></p>
+<blockquote>
+<p>4B/5B 编码是一种两级编码方案，首先要把数据变成（ <font color="gren"><strong>NRZ-1</strong></font> ）编码，再把4位分为一组的代码变换成5单位的代码，这种编码的效率是（ <font color="gren"><strong>0.8</strong></font> ）。</p>
+</blockquote>
+<p><strong>4.数据通信基础</strong></p>
+<blockquote>
+<p>在计算机中，最适合进行数字加减运算的数字编码是（ <strong><font color="gren">补码</font></strong> ），最适合表示浮点数阶码的数字编码是（ <strong><font color="gren">移码</font></strong> ）。</p>
+</blockquote>
+<h2 id="四月二十一日"><a href="#四月二十一日" class="headerlink" title="四月二十一日"></a>四月二十一日</h2><hr>
+<p><strong>1.IEEE 802.1协议族</strong></p>
+<blockquote>
+<ul>
+<li>IEEE 802.1d：生成树协议（STP）</li>
+<li>IEEE 802.1w：快速生成树协议（RSTP）【改进d】</li>
+<li>IEEE 802.1s：多生成树协议（MSTP）【改进w】</li>
+<li>IEEE 802.1q：虚拟局域网（vlan）</li>
+<li>IEEE 802.1x：基于端口的访问控制协议</li>
+</ul>
+</blockquote>
+<p><strong>2.IEEE 802.11协议族</strong></p>
+<blockquote>
+<p><img src="/../images/IEEE802.11%E5%8D%8F%E8%AE%AE%E6%97%8F.png" alt="1"></p>
+</blockquote>
+<p><strong>3.组网技术</strong></p>
+<blockquote>
+<p>在生成树协议 STP 中，根交换机是根据什么来选择的？（ 最小的交换机 ID ）</p>
+</blockquote>
+<h2 id="四月二十日"><a href="#四月二十日" class="headerlink" title="四月二十日"></a>四月二十日</h2><hr>
+<p><strong>1.局域网与城域网</strong></p>
+<blockquote>
+<p>对于 CSMA/CD ，线路利用率越高，冲突越高，平均传输延迟就越大；而且平均传输延迟的增加速度远高于线路利用率的提高速度。</p>
+<p>对于令牌环，线路利用率的提高虽然也会造成平均传输延迟的提高，但对平均传输延迟的提高影响不太大。</p>
+</blockquote>
+<p><strong>2.计算机网络概述</strong></p>
+<blockquote>
+<p>CPU 由运算器和控制器组成。</p>
+<p>（1）运算器：主要负责对信息进行加工处理，从图中可以看出运算器从内存储器得到需要加工的数据，对数据进行算术运算和逻辑运算，并将最后的结果返回到内存储器中。运算器通常是由 <font color="red"><strong>ALU 单元</strong></font>（算术/逻辑单元，包括累加器、加法器等）、<font color="red"><strong>通用寄存器</strong></font>（不包含地址寄存器）、<font color="red"><strong>多路转换器</strong>、<strong>数据总线</strong></font>组成。</p>
+<p>（2）控制器：是中央处理器的核心，主要功能就是统一指挥并控制计算机各部件协调工作，所依据的是机器指令。其实就是向计算机其他部件发送控制指令。控制器的<strong>组成</strong>包含<strong>程序计数器</strong>（PC）、<strong>指令寄存器</strong>（IR）、<strong>指令译码器</strong>、<strong>时序部件</strong>、<strong>微操作控制信号形成部件</strong>（PSW）和<strong>中断机构</strong>。</p>
+</blockquote>
+<p><strong>3.网络安全-数字签名（<font color="red"> 私钥发送，公钥核实</font> ）</strong></p>
+<blockquote>
+<p>在安全通信中，A 将发送的信息使用（ <font color="gren"><strong>A 的私钥</strong></font> ）进行数字签名，B 收到该消息后可利用（ <font color="gren"><strong>A 的公钥</strong></font> ）验证该消息的真实性。</p>
+<p>数字签名用的是发送方的私钥，接收方收到消息后用发送方的公钥进行核实签名。</p>
+</blockquote>
+<p><strong>4.网络英语</strong></p>
+<p>The usual way to ensure reliable delivery is to provide the ( <strong>sender</strong> ) with some feedback about what is happenin at the other end of the line. </p>
+<p>（ 保证可靠提交的常用方式是向发送端提供一版馈信息,使它知道在线路的另一端发生 了什么情况。）</p>
+<p>Typically, the protocol calls for the receiver to send back special ( <strong>controll</strong> ) frame bearing positive or negative ( <strong>acknowledgement</strong> ) about the incoming frames.<br>（ 典型的情况是:协议要求接受端回送一个承载有 关输入帧的肯定或否定应答的特殊控制帧。）</p>
+<p>If the sender receives a positive acknowledgement about a frame, it knows the the frame has arrived safely.</p>
+<p>（ 如果发送端收到了有关帧的肯定应答，它就知道发送的帧已经安全到达。）</p>
+<p>On the other hand, a negative acknowledgement means that something has gone wrong, and the frame must be transmitted again.</p>
+<p>（ 另一方面， 否定应答则意味着出现了某种错误，应该重新发送出错的帧。）</p>
+<p>An additional complication comes from the possibility that hardware troubles may cause a frame to ( <strong>vanish</strong> ) completely. </p>
+<p>（ 还有一些复 杂的情况发生，硬件故障可能引起帧完全消失。）</p>
+<p>In this case, the receiver will not react at all, since it has no any reason to react. </p>
+<p>（ 在这种情况下，接收端完全没有反应,因为它根本无法反应。）</p>
+<p>It should be clear that a protocol in which the sender transmits a frame and then waits for an acknowledgement, positive or negative, will hang forever if a frame is ever lost due to, for example, ( <strong>malfunctioning</strong> ) hardware.</p>
+<p>（ 显然，如果一个帧由于硬件失效而失了，那么这样的协议一发送端发出一个帧然后等待肯定或否定应答,就会被永远地挂起了。）</p>
+<blockquote>
+<p>问题 1：</p>
+<p>A、receiver（接收器）</p>
+<p>B、controller（控制器）</p>
+<p><strong><font color="gren">C、sender（发送）</font></strong></p>
+<p>D、customer（用户）</p>
+<p>问题 2：</p>
+<p>A、data（数据）</p>
+<p><strong><font color="gren">B、controll（控制）</font></strong></p>
+<p>C、request（请求）</p>
+<p>D、session（会期、会话）</p>
+<p>问题 3：</p>
+<p>A、application（应用）</p>
+<p>B、connection（连接）</p>
+<p>C、stream（流）</p>
+<p><font color="gren"><strong>D、acknowledgement（确认、应答）</strong></font></p>
+<p>问题 4：</p>
+<p><font color="gren"><strong>A、vanish（消失）</strong></font></p>
+<p>B、vary（不同）</p>
+<p>C、appear（出现）</p>
+<p>D、incline（趋向）</p>
+<p>问题 5：</p>
+<p>A、acting（代理）</p>
+<p>B、working（加工）</p>
+<p><font color="gren"><strong>C、malfunctioning（故障）</strong></font></p>
+<p>D、functioning（运作、运转）</p>
+</blockquote>
+<h2 id="四月十九日"><a href="#四月十九日" class="headerlink" title="四月十九日"></a>四月十九日</h2><hr>
+<p><strong>1.网络故障</strong></p>
+<blockquote>
+<p>交换机的二层转发表空间被占满，清空后短时间内仍然会被占满，造成这种现象的原因可能是（ <font color="gren"><strong>利用假的 MAC 进行攻击</strong></font> ）</p>
+<p>黑客可以发送成千上万的源 MAC 地址变化的报文，把交换机的 MAC 地址表填满，从而造成正常用户之间通信的报文也以泛洪的形式来转发，从而阻塞整个网络。</p>
+</blockquote>
+<p><strong>2.ADSL</strong></p>
+<blockquote>
+<p>使用 ADSL 接入电话网采用的认证协议是（ <font color="gren"><strong>PPPoE</strong></font> ）。</p>
+</blockquote>
+<h2 id="四月十八日"><a href="#四月十八日" class="headerlink" title="四月十八日"></a>四月十八日</h2><hr>
+<p><strong>1.数据速率</strong></p>
+<blockquote>
+<p>设信道带宽为 5000Hz，采用 PCM 编码，采样周期为 125μs，每个样本量化为 256个等级，则信道的数据速率为（ <strong>64kb/s</strong> ）</p>
+<p>R=Blog<sub>2</sub>N=( 1/125 * 10<sup>-6</sup> )* log<sub>2</sub>256=8000 * 8=64000bps</p>
+</blockquote>
+<h2 id="四月十七日"><a href="#四月十七日" class="headerlink" title="四月十七日"></a>四月十七日</h2><hr>
+<p><strong>1.网络规划设计</strong></p>
+<blockquote>
+<p>网络规划中，冗余设计不能（ <strong><font color="gren">加快路由收敛</font></strong> ）</p>
+<p>冗余设计可以提高可靠性、安全性、增强负载能力，但不能加速路由收敛。</p>
+</blockquote>
+<p><strong>2.千兆网</strong></p>
+<blockquote>
+<p>以下千兆以太网标准中，支持1000m以上传输距离的是（<font color="GREN"> <strong>1000 BASE-LX</strong></font> ）</p>
+<ul>
+<li>1000 BASE-T 使用双绞线，最大传输距离 100m</li>
+<li>1000 BASE-CX 使用屏蔽铜线，最大传输距离 25m</li>
+<li>1000 BASE-SX 使用多模光纤，最大传输距离 550m</li>
+<li>1000 BASE-LX 使用单模光纤，最大传输距离 5000m</li>
+</ul>
+</blockquote>
+<p><strong>3.万兆网</strong></p>
+<blockquote>
+<p>在 10G Base-ER 标准中，使用单模光纤最大传输距离是（ <font color="gren"><strong>40公里</strong></font> ）。</p>
+<p>用于局域网的光纤万兆以太网规范有：10G Base-SR、10G Base-LR 和 10G Base-ER。</p>
+<ul>
+<li>1、10G Base-SR（ <strong>short（短）</strong> range ）64B/66B短波（波长850nm）多模光纤，有效传输距离2-300m。</li>
+<li>2、10G Base-LR（ <strong>long（长）</strong> range ）64B/66B长波（ 1310nm ）单模光纤，有效传输距离为2米到10公里。</li>
+<li>3、10G Base-ER（ <strong>extended（超长）</strong> range ）64B/66B超长波（ 1550nm ）单模光纤，有效传输距离为2米到40公里</li>
+</ul>
+</blockquote>
+<h2 id="四月十六日"><a href="#四月十六日" class="headerlink" title="四月十六日"></a>四月十六日</h2><hr>
+<p><strong>1.逻辑网络设计</strong></p>
+<blockquote>
+<p>逻辑网络设计是体现网络设计核心思想的关键阶段，下列选项中不属于逻辑网络设计内容的是（ <font color="gren"><strong>结构化布线设计</strong></font> ）。</p>
+<ul>
+<li>A、网络结构设计</li>
+<li>B、物理层技术选择</li>
+<li><font color="gren">C、结构化布线设计</font></li>
+<li>D、确定路由选择协议<br>结构化布线设计属于物理网络设计的任务</li>
+</ul>
+</blockquote>
+<p><strong>2.端口</strong></p>
+<blockquote>
+<p>在 Windows 操作系统中，远程桌面使用的默认端口是：<font color="red"><strong>3389</strong></font></p>
+</blockquote>
+<p><strong>3.web 架设</strong></p>
+<blockquote>
+<p>要在一台主机上建立多个独立域名的站点，下面的方法中（ <font color="gren"><strong>使用虚拟目录</strong></font> ）是错误的。</p>
+<ul>
+<li>A、为计算机安装多块网卡</li>
+<li>B、使用不同的主机头名</li>
+<li><font color="red"><strong>C、使用虚拟目录</strong></font></li>
+<li>D、使用不同的端口号</li>
+</ul>
+<p>IIS 通过分配 TCP 端口、IP 地址和主机头名来在一台服务器上运行多个网站。虚拟主机之间相互独立，由用户自行管理。采用这种技术可以节约硬件投资、节省空间，降低成本。</p>
+<p>（1）基于附加 TCP 端口架设多个 Web 网站</p>
+<ul>
+<li>使用格式为“http://域名:端口号”的网址来访问的网站实际上是利用 TCP 端口号，在同一服务器上架设不同的 Web 网站。例如：<a target="_blank" rel="noopener" href="http://www.zhangjp.tk/">http://www.zhangjp.tk:80</a></li>
+</ul>
+<p>（2）基于不同的 IP 地址架设多个网站</p>
+<ul>
+<li>将每个网站绑定到不同的 IP 地址，以确保每个网站域名对应于独立的 IP 地址。</li>
+</ul>
+<p>（3）基于主机头名架设多个 Web 网站</p>
+<ul>
+<li>由于传统的 IP 虚拟主机浪费 IP 地址，实际应用汇总更倾向于采用非 IP 虚拟主机技术，也就是把多个域名的主机头名绑定到同一 IP。前提条件就是在 DNS 服务器上将多个域名映射到同一 IP 地址。一旦来自客户端的 Web 访问请求到达服务器，服务器将使用 HTTP 头中传递的主机头名来确定客户请求的是哪个网站。</li>
+</ul>
+</blockquote>
+<h2 id="四月十五日"><a href="#四月十五日" class="headerlink" title="四月十五日"></a>四月十五日</h2><hr>
+<p><strong>1.Linux 系统 DNS 服务器配置</strong></p>
+<blockquote>
+<p>在 Linux 系统中，DNS 配置文件的（ <font color="gren"><strong>nameserver</strong></font> ）参数，用于确定 DNS 服务器地址。</p>
+<p>resolve.conf 的关键字主要有四个，分别是：</p>
+<p>nameserver  # 定义DNS服务器的IP地址</p>
+<p>domain         # 定义本地域名</p>
+<p>search           # 定义域名的搜索列表</p>
+<p>sortlist          # 对返回的域名进行排序</p>
+</blockquote>
+<p><strong>2.流量控制与差错控制</strong></p>
+<blockquote>
+<p>在卫星通信中，通常才从的差错控制机制为（ <font color="gren"><strong>选择重发 ARQ</strong></font>&gt; ）。</p>
+<p>选择重传只对出错的数据帧的数据帧进行重传，对时延不敏感，信道利用率高，因此被广泛应用于长时延无线数据传输中，如卫星数据通信。</p>
+</blockquote>
+<p><strong>3.网络攻击</strong></p>
+<blockquote>
+<p>攻击者通过发送一个目的主机已经接受过的报文来达到攻击目的，这种攻击方式属于（ <font color="gren"><strong>重放</strong></font> ）攻击。</p>
+</blockquote>
+<h2 id="四月十四日"><a href="#四月十四日" class="headerlink" title="四月十四日"></a>四月十四日</h2><hr>
+<p><strong>1.无线局域网标准</strong></p>
+<blockquote>
+<p>一下关于 WIFI 6 的说法中，错误的是（ <font color="gren"><strong>工作段在 5GHz</strong></font> ）  </p>
+<ul>
+<li>A、支持完整版的 MU-MIMO</li>
+<li>B、理论吞吐量最高可达 9.6 Gbps</li>
+<li>C、遵从协议 802.11ax</li>
+<li><strong>D、工作段在 5GHz（x）</strong><br><img src="/../images/%E6%97%A0%E7%BA%BF%E5%B1%80%E5%9F%9F%E7%BD%91%E6%A0%87%E5%87%86.png" alt="无线局域网标准"></li>
+</ul>
+</blockquote>
+<p><strong>2.六大子系统</strong></p>
+<blockquote>
+<p>计算机网络机房建设过程中，单独设置接地体时，安全接地电阻要求小于（ <font color="gren"><strong>4Ω</strong></font> ）。<br>关于接地电阻测试要求：  </p>
+<ul>
+<li>（1）交流工作接地电阻不应大于 <strong>4Ω</strong>；</li>
+<li>（2）安全工作接地电阻不应大于 <strong>4Ω</strong>；</li>
+<li>（3）直流工作接地电阻应按计算机系统具体要求确定；</li>
+<li>（4）防雷保护地接地电阻不应大于 <strong>10Ω</strong>；</li>
+<li>（5）对于屏蔽系统若采用联合接地，其接地电阻不应大于 <strong>1Ω</strong>。</li>
+</ul>
+</blockquote>
+<h2 id="四月十三日"><a href="#四月十三日" class="headerlink" title="四月十三日"></a>四月十三日</h2><hr>
+<p><strong>1.防火墙技术</strong></p>
+<blockquote>
+<p>代理服务器为局域网用户提供 Internet 访问时，不提供（ <font color="gren"><strong>数据加密</strong></font> ）。<br>代理服务器是介于浏览器和web服务器之间的一台服务器，代理服务器可提供地址共享、数据缓存和数据转发等功能，但不能进行数据加密，加密要由加密技术来实现。</p>
+</blockquote>
+<p><strong>2.OSPF 路由协议</strong></p>
+<blockquote>
+<ul>
+<li>display ospf [1] peer //查看 OSPF 邻居表的详细信息。  </li>
+<li>Area：邻居所属的区域</li>
+<li>Interface：与邻居相连的接口</li>
+<li>Router ID：邻居 Router ID</li>
+<li>Address：邻居接口地址</li>
+<li>State：邻居状态</li>
+<li>Down：该状态为邻居的初始状态</li>
+<li>Attempt：该状态只存在于 NBMA 网络上，表明正在尝试建立邻居关系</li>
+<li>Init：该状态表明已经接收到了从邻居发送来的 hello 报文</li>
+<li>2-Way：该状态表明已经接收到了从邻居发送过来的 Hello 报文，并且该 Hello 报文的 neighbor list 中包含本地 Router ID，即双方可以互通  </li>
+<li>ExStart：该状态为建立 Adjacency 的第一步，进行主从关系、DD Sequence Number 的协商</li>
+<li>Loading：LSDB正在进行同步操作，交互的报文有 LSR 报文和 LSU 报文</li>
+<li>Full：该状态说明，邻居的 LSDB 已经同步完成，双方建立了 Full 邻接关系</li>
+</ul>
+</blockquote>
+<p><strong>3.传输介质</strong></p>
+<blockquote>
+<p>HFC 接入网采用<font color="gren"><strong>光纤</strong></font>传输介质接入住宅小区。</p>
+</blockquote>
+<h2 id="四月十二日"><a href="#四月十二日" class="headerlink" title="四月十二日"></a>四月十二日</h2><hr>
+<p><strong>1.Linux 系统 DNS 服务器配置</strong></p>
+<blockquote>
+<p>在 Linux 中，用于解析主机域名的文件是（ <font color="gren"><strong>/etc/hosts</strong></font> ）。</p>
+<ul>
+<li>A、/dev/host.conf（ dev 目录是用于存储硬件设备信息的目录，host.conf 不在这个文件夹里面。）</li>
+<li><strong>B、/etc/hosts</strong></li>
+<li>C、/dev/resolv.conf</li>
+<li>D、/etc/resolv.conf（是 DNS 客户机的配置文件，用于设置 DNS 服务器的 IP 地址及 DNS 域名，还包含了主机的域名搜索顺序。）</li>
+</ul>
+</blockquote>
+<p><strong>2.DHCP 协议</strong></p>
+<blockquote>
+<p>主机向 DHCP 服务器发送 <strong>dhcp discover</strong> 报文以请求获取 ip 地址。第一个报文中的源 mac 地址为主机 mac，源 ip 为 0.0.0.0。目的 mac 为广播 mac，目的 ip 为 255.255.255.255。<br><img src="/../images/DHCP.png" alt="DHCP">  </p>
+<p>点拨：在考试中，DHCP 交换的四个报文都是广播报文。所以四个报文的目的地址都是广播地址。  </p>
+</blockquote>
+<p><strong>3.加密技术</strong></p>
+<blockquote>
+<p>下列算法中，不属于公开秘钥加密算法的是（ <strong>DES</strong> ）。<br>ECC DSA RSA <strong>DES</strong><br>DES 是对称加密算法；<br>ECC、DSA、RSA 属于非对称加密算法，也叫公钥加密算法。</p>
+</blockquote>
+<p><strong>4.</strong></p>
+<blockquote>
+<p>**Routing in circuit-switching networks has traditionally involved a static routing strategy with the use of ( <font color="red">alternate</font> ) paths to respond to increased load.<strong>（ 电路交换网络中的路由传统上涉及静态路由策略，使用(<strong>备用</strong>)路径来响应增加的负载。） <strong>Modern routing strategies provide more adaptive and flexible approaches.</strong> （ 现代路由策略提供了更具适应性和灵活性的方法。）</strong>The routing function of a packet-switching network attempts to find the least-cost route through the network, with cost based on the number of (<font color="red"> hops </font>) ,expected delay, or other metrics.<strong>（分组交换网络的路由功能试图找到通过网络的最小开销（成本最低）路由，其成本基于( <strong>跳</strong> )的数量、预期延迟或其他指标。） <strong>In virtually all packet-switching networks, some sort of adaptive routing technique is used.</strong> （ 在几乎所有的分组交换网络中，都使用某种自适应路由技术。）</strong>Adaptive routing algorithms typically rely on the ( <font color="red">exchange</font> ) of information about traffic conditions among nodes.<strong>（ 自适应路由算法通常依赖于节点间交通状况信息的(<strong>交换</strong>)。）</strong>In most cases, adaptive strategies depend on status information that is ( <font color="red">collected</font> ) at one place but used at another.**（ 在大多数情况下，适应性策略依赖于在一个地方(<strong>收集</strong>)但在另一个地方使用的状态信息。） <strong>There is a tradeoff here between the quality of the information and the amount of ( <font color="red">information</font> ).</strong> （ 这里在信息的质量和(<strong>信息</strong>)的数量之间有一个权衡。）The exchanged information is itself a load on the constituent networks, causing a performance degradation.<br>问题 1</p>
+<ul>
+<li>A、only（仅有）</li>
+<li>B、single（单一）</li>
+<li><strong>C、alternate（备用）</strong></li>
+<li>D、series（连续）</li>
+</ul>
+<p>问题 2</p>
+<ul>
+<li><strong>A、hops（跳数）</strong></li>
+<li>B、sites（站点）</li>
+<li>C、members（成员）</li>
+<li>D、points（点数）</li>
+</ul>
+<p>问题 3</p>
+<ul>
+<li><strong>A、exchange（交换）</strong></li>
+<li>B、transportation（传输）</li>
+<li>C、reception（接收）</li>
+<li>D、transmission（传输）</li>
+</ul>
+<p>问题 4</p>
+<ul>
+<li>A、rejected（被拒绝）</li>
+<li><strong>B、collected（收集）</strong></li>
+<li>C、discarded（被丢弃）</li>
+<li>D、transmitted（传输）</li>
+</ul>
+<p>问题 5</p>
+<ul>
+<li>A、packets（数据包）</li>
+<li><strong>B、information（信息）</strong></li>
+<li>C、data（资料）</li>
+<li>D、overhead（开销）</li>
+</ul>
+</blockquote>
+<h2 id="四月十一日"><a href="#四月十一日" class="headerlink" title="四月十一日"></a>四月十一日</h2><hr>
+<p><strong>1.六大子系统</strong></p>
+<blockquote>
+<p>通常情况下，信息插座的安装位置距离地面的高度为（ <font color="red"><strong>30~50</strong></font> ）cm。</p>
+</blockquote>
+<p><strong>2.Linux 的基本管理</strong></p>
+<blockquote>
+<ul>
+<li>Cp -f 强制复制目录的命令</li>
+<li>Cp -i 覆盖前先询问用户</li>
+<li>Cp -a 保留原文件属性的前提下复制文件</li>
+<li>Cp -l 对文件建立硬链接，而非复制文件</li>
+</ul>
+</blockquote>
+<p><strong>3.以太网传输介质</strong></p>
+<blockquote>
+<p>下列指标中，仅用于双绞线测试的是（ <font color="gren"><strong>近端串扰</strong></font> ）。</p>
+<ul>
+<li>A、最大衰减限制</li>
+<li>B、波长窗口参数</li>
+<li>C、回波损耗限制</li>
+<li><strong>D、近端串扰</strong></li>
+</ul>
+<p><strong>近端串扰</strong>是指在双绞线内部中一队线中的一条线与另一条线之间的因信号耦合效应而产生的串扰。<br><strong>最大衰减限制</strong>是指信号在传输介质中传播时，将会有一部分能量转化成热能或者被传输介质吸收，从而造成信号强度不断减弱的现象，双绞线和光纤都有这样的特征。<br><strong>波长窗口参数</strong>和<strong>回波损耗限值</strong>都是<strong>光纤</strong>中才有的指标。 </p>
+</blockquote>
+<h2 id="四月十日"><a href="#四月十日" class="headerlink" title="四月十日"></a>四月十日</h2><hr>
+<p><strong>1.RAID 技术</strong></p>
+<blockquote>
+<p>某数据中心做存储系统设计，从性价比角度考量，最合适的冗余方式是（ <strong>RAID 5</strong> ），当该 RAID 配备 N 块磁盘时，实际可用数为（ <strong>N-1</strong> ）块。<br><strong>RAID 0</strong> 是磁盘利用率最高，但是不提供可靠性，容错低。</p>
+</blockquote>
+<p><strong>2.计算机硬件基础 &gt; 硬盘</strong></p>
+<blockquote>
+<p>在磁盘调度管理中，通常（ 先进行移臂调度，再进行旋转调度 ）。<br>先移臂后旋转。</p>
+</blockquote>
+<p><strong>3.PGP 协议</strong></p>
+<blockquote>
+<p>下述协议中与安全电子邮件服务无关的是（ <strong>MIME</strong> ）。<br>SSL HTTPS <strong>MIME（该选项不涉及安全）</strong> PGP<br>MIME 即多用途互联网邮件扩展，是目前互联网电子邮件普遍遵循的邮件技术规范。在 MIME 出现之前，互联网电子邮件主要遵循由 RFC 822 所制定的标准，电子邮件一般只用来传递基本的 ASCLL 码文本信息，MIME 在 RFC 822 的基础上对电子邮件规范做了大量的扩展，引入了新的格式规范和编码方式，在 MIME 的支持下，图像、声音、动画等二进制文件都可方便的通过电子邮件来进行传递，极大地丰富了电子邮件的功能。目前互联网上使用的基本都是遵循 MIME 规范的电子邮件。</p>
+</blockquote>
+<p><strong>4.ARP 协议</strong></p>
+<blockquote>
+<p>RARP 协议的作用是（ <strong>根据 MAC 查 IP</strong> ）<br>逆地址解析协议 RARP 是把 MAC 转换为 IP。</p>
+</blockquote>
+<h2 id="四月九日"><a href="#四月九日" class="headerlink" title="四月九日"></a>四月九日</h2><hr>
+<p><strong>1.HTTP 协议</strong></p>
+<blockquote>
+<p>浏览器地址访问域名：  </p>
+<ul>
+<li>1、<strong>解析 URL</strong>；</li>
+<li>2、浏览器封装 HTTP 请求报文；</li>
+<li>3、DNS 域名解析获取 IP 地址；</li>
+<li>4、<strong>建立 TCP 连接</strong>；</li>
+<li>5、浏览器发送请求；</li>
+<li>6、负责传输的 IP 协议；</li>
+<li>7、使用 ARP 协议凭借 MAC 地址通信；</li>
+<li>8、服务器响应请求；</li>
+<li>9、断开 TCP 连接。</li>
+</ul>
+</blockquote>
+<h2 id="四月八日"><a href="#四月八日" class="headerlink" title="四月八日"></a>四月八日</h2><hr>
+<p><strong>1.防火墙技术</strong></p>
+<blockquote>
+<p>在防火墙域间安全策略中，不是 outbound 方向数据流的是（ 从 Trust 区域到 Local 区域的数据流 ）。<br>在华为防火墙中，每个安全区域都有一个安全级别，用1-100表示，数字越大，代表这个区域越可信。默认情况下，<strong>LOCAL 区域安全级别 100、Trust 区域为 85、DMZ 为 50、Untrust 区域为 5</strong>。<br>安全域间的数据流动具有方向性，包括入方向（inbound）和出方向（outbound）。<br>入方向：数据由低优先级的安全区域向高优先级的安全区域传输。<br>出方向：数据由高优先级的安全区域向低优先级的安全区域传输。</p>
+</blockquote>
+<p><strong>2.高速以太网</strong></p>
+<blockquote>
+<p>10G Base-ER 标准中，使用单模光纤最大传输距离是（ D. 40公里 ）。<br>用于局域网的光纤万兆以太网规范有：10GBase-SR、10GBase-LR 和 10GBase-ER。</p>
+<ul>
+<li>1、10GBase-SR<br>10GBase-SR中的“SR”是“short range”（短距离）的缩写，表示仅用于<strong>短距离连接</strong>。该规范支持编码方式为64B/66B的短波（波长为850nm）<strong>多模光纤</strong>（MMF），有效传输距离为<strong>2米到300米</strong>。</li>
+<li>2、10GBase-LR<br>10GBase-LR 中的“LR”是“long range”（长距离）的缩写，表示主要用于<strong>长链接</strong>。该规范支持编码方式为64B/66B的长波（1310nm）<strong>单模光纤</strong>（SMF），有效传输距离为<strong>2米到10公里</strong>。</li>
+<li>3、10GBase-ER<br>10GBase-ER 中的“ER”是“extended range”（超长距离）的缩写，表示<strong>连接距离可以非常长</strong>。该规范支持编码方式为64B/66B的超长波（1550nm）单模光纤（SMF），有效传输距离为<strong>2米到40公里</strong>。</li>
+<li>4、10GBase-CX4<br>10GBase-CX4 对应的就是2004年发布的 IEEE 802.3ak万兆以太网标准。10GBase-CX4使用802.3ae中定义的 XAUI（万兆附加单元接口）和用于 InfiniBand 中的4X连接器，传输介质称之为“CX4 铜缆”（其实就是一种屏蔽双绞线）。它的有效传输距离仅15m。</li>
+<li>5、10GBase-T<br>10GBase-T 是一种使用<strong>铜缆双绞线连接</strong>（超六类或以上）的以太网规范，数据层有效带宽为 10Gbit/s，最源传输距离可达<strong>100米</strong>。与 10GBase-T 对应的 IEEE 标准是 802.3an-2006。</li>
+</ul>
+</blockquote>
+<p><strong>3.UDP 协议</strong></p>
+<blockquote>
+<p>RIP 基于UDP协议。</p>
+</blockquote>
+<h2 id="四月七日"><a href="#四月七日" class="headerlink" title="四月七日"></a>四月七日</h2><hr>
+<p><strong>1.MAC 地址和以太网帧结构</strong></p>
+<blockquote>
+<p>以太网的最大帧长为 1518 字节，每个数据帧前面有8个字节的前导字段，帧间隔为 9.6μs 。传输 240000 bit 的 IP数据报 ，采用 100BASE-TX 网络，需要的最短时间为（ 2.63ms ）<br>IP 数据报的长度是 240000 比特，一共 30000 字节，封装在以太帧里面，需要分片，一共分 20 片（实际应该是21片，此题以20片计算）。每个以太帧的传输时间是（1518+8）* 8/100Mbps=0.00012208s 。20个以太帧的传输时间是 20*0.00012208=0.0024416s。<br>20个帧中间会存在20个帧间间隔时间 192μs。<br>所以总时间 = 2441.6+192=2633.6μs=2.63ms 。</p>
+</blockquote>
+<p><strong>2.Linux 系统 Samba 服务配置</strong></p>
+<blockquote>
+<p><font color="gren"><strong>提供文件和打印机共享服务</strong></font> 是 Linux 中 Samba 的功能。<br>Samba 是为不同系统间提供文件和打印共享的服务。</p>
+</blockquote>
+<p><strong>3.数字证书</strong></p>
+<blockquote>
+<p>假定用户 A、B 分别在 I<sub>1</sub> 和 I<sub>2</sub> 两个 CA 处取得了各自的证书，A、B 互信的必要条件是：<font color="gren"><strong>I<sub>1</sub>、I<sub>2</sub>互换公钥</strong></font>。</p>
+</blockquote>
+<h2 id="四月六日"><a href="#四月六日" class="headerlink" title="四月六日"></a>四月六日</h2><hr>
+<p><strong>1.VLAN 标准 IEEE 802.1Q</strong></p>
+<blockquote>
+<p>VLAN 帧的最小帧长是（ <font color="gren"><strong>64</strong></font> ）字节，其中表示帧优先级的字段是（ <font color="gren"><strong>PRI</strong></font> ）。  </p>
+<p>解析1：<br>以太网帧长度最大为：<font color="red">1518 B</font>，最短帧长为：（ <font color="RED">64 B</font> ）。<br>VLAN 帧会在源 MAC 地址后增加 4B 的标记字段，长度范围最大为 <font color="red">1522 B</font>。最小 <font color="red">64 B</font>。</p>
+<p>解析2：<br>其中4字节标记字段包括：<br>（1）类型 TPID，叫做标记协议 ID 值。占16位，对于以太网，设置为十六进制0x8100。<br>（2）标记控制信息 TCL：标签控制信息字段、包括用户优先级 Priority，规范格式指示器 CFI、VID。<br>（3）Priority（PRI） 定义数据帧的优先级。<br>（4）规范格式标识符 CFI：指出 MAC 地址为以太网还是令牌环格式。在以太网交换机中，规范格式指示器总是设置为0。<br>（5）VLAN ID：12位，VLAN 标识符（ VID ），指出帧的源 VLAN。一共支持 4096 个 VLAN。</p>
+</blockquote>
+<p><strong>2.页式存储基本原理</strong></p>
+<blockquote>
+<p>某计算机系统页面大小为 4K，进程的页面变换表如下所示。若进程的逻辑地址为 2D16H。该地址经过变换后，其物理地址应为（ <font color="gren"><strong>4D16H</strong></font> ）。<br><img src="/../images/2023-4.06-1.png"></p>
+<p>解析：<br>页面大小是 4K（ 2的12次方 ），逻辑地址是 2D16H，转为二进制是 0010 1101 0001 0110，那么后 12 位是页内地址，前 0010 是页号，通过查表物理块号是 4，所以物理地址是 4D16H。</p>
+</blockquote>
+<h2 id="四月五日"><a href="#四月五日" class="headerlink" title="四月五日"></a>四月五日</h2><hr>
+<p><strong>1.程序编码</strong></p>
+<blockquote>
+<p>编译和解释是实现高级程序设计语言的两种基本方式。（ <font color="gren"><strong>是否生成目标代码</strong></font> ）是这两种方式的主要区别。</p>
+</blockquote>
+<p><strong>2.ARP协议</strong></p>
+<blockquote>
+<p>若主机 host A 的 MAC 地址为 aa-aa-aa-aa-aa-aa,主机 host B 的 MAC 地址为 bb-bb-bb-bb-bb-bb。由 host A 发出的查询 host B 的 MAC 地址的帧格式如下图所示，则此帧中的目标 MAC 地址为（ <font color="gren"><strong>ff-ff-ff-ff-ff-ff（此为广播地址）</strong></font> ），ARP 报文中的目标 MAC 地址为（ <font color="gren"><strong>bb-bb-bb-bb-bb-bb</strong></font> ）。  </p>
+<table>
+<thead>
+<tr>
+<th>目标MAC地址</th>
+<th>源MAC地址</th>
+<th>协议类型</th>
+<th>ARP报文</th>
+<th>CEC</th>
+</tr>
+</thead>
+</table>
+<p>当主机 A 向本局域网内的主机 B 发送 IP 数据报的时候，就会先查找自己的 ARP 映射表，查看是否有主机 B 的 IP 地址，若有的话，就继续查找出其对应的硬件地址，在把这个硬件地址写入 MAC 帧中，然后通过局域网发往这个硬件地址。<br><font color="red"><strong>也有可能找不到主机 B 的 IP 地址项目，在这种情况下，主机 A 就要运行 ARP 协议，广播 ARP 请求分组，去请求主机 B 的 MAC</strong></font> 。</p>
+<p>通俗说就是主机 A 查询主机 B，首先查询本地 MAC，没有的话就发送 ARP 报文，首先要发送一个广播请求，一个广播 MAC 地址：FF-FF-FF-FF-FF-FF，然后在发送 ARP 报文。</p>
+</blockquote>
+<p><strong>3.系统开发和项目管理基础</strong></p>
+<blockquote>
+<p>在基于 web 的电子商务应用中，访问存储于数据库中的业务对象是常用方式之一是（ <font color="gren"><strong>JDBC</strong></font> ）。<br>数据库连接（ JDBC ）由一组用 Java 编程语言编写的类和接口组成，它提供了一个标准的 API。</p>
+</blockquote>
+<p><strong>4.六大子系统</strong></p>
+<blockquote>
+<p> 结构化综合布线系统分为六个子系统，其中水平子系统的作用是（ <font color="gren"><strong>连接干线子系统和用户工作区</strong></font> ）,干线子系统（也称垂直子系统）的作用是（ <font color="gren"><strong>实现各楼层设备间子系统之间的互联</strong></font> ）。</p>
+</blockquote>
+<h2 id="四月四日"><a href="#四月四日" class="headerlink" title="四月四日"></a>四月四日</h2><hr>
+<p><strong>1.流水线技术</strong></p>
+<blockquote>
+<p><font color="red"><strong>MIPS</strong></font> 指用计算机平均每秒能执行的百万条指令数来衡量计算机性能的一种指标。  </p>
+<ul>
+<li>CPI（ <strong>Clock</strong> cycle Per Instruction ）：表示每条计算机指令执行所需的时钟周期。</li>
+<li>MIPS（ Million Instructions Per Second ）：单字长定点指令平均执行速度，每秒处理的百万级的机器语言指令数。</li>
+<li>PCI（ Peripheral Component Interconnect ）：外设部件互连标准，它是目前个人电脑中使用最为广泛的接口，几乎所有的主板产品上都带有这种插槽。</li>
+<li>MFLOPS（ Million Floating-point Operations Per Second ）：每秒百万个浮点操作，衡量计算机系统的技术指标，不能反映整体情况，只能反映浮点运算情况。</li>
+</ul>
+</blockquote>
+<p><strong>2.WIFI安全</strong></p>
+<blockquote>
+<p>IEEE 802.11i 标准制定的无线网络加密协议（ <font color="red"><strong>WPA</strong></font> ）是一个基于（ <font color="red"><strong>TKIP</strong></font> ）算法的加密方案。<br>WPA 协议是一种保护无线网络（ WIFI ）安全的系统，它是在前一代有线等效加密（ WEP ）的基础上产生的，解决了前任 WEP 的缺陷问题，它使用 TKIP（ 临时秘钥完整性 ）协议，是 IEEE 802.11i 标准中的过渡方案。</p>
+</blockquote>
+<p><strong>3.IDS 和 IPS</strong></p>
+<blockquote>
+<p>（ <font color="red"><strong>漏洞扫描</strong></font> ）不属于入侵检测技术。<br>漏洞扫描是指基于漏洞数据库，通过扫描等手段对指定的远程或者本地计算机系统的安全脆弱性进行检测。</p>
+</blockquote>
+<p><strong>4.SNMP 协议工作原理</strong></p>
+<blockquote>
+<p>在 SNMP 协议中，代理收到管理站的一个 GET 请求后，若不能提供该实例的值，则（ <font color="gren"><strong>返回下个实例的值</strong></font> ）。</p>
+</blockquote>
+<p><strong>5.IPv4数据报</strong></p>
+<blockquote>
+<p>IPv4 首部中填充字段的作用是（ <font color="gren"><strong>确保首部为 32 比特的倍数</strong></font> ）<br>IP 数据报的长度以 4B 为单位。</p>
+</blockquote>
+<h2 id="四月三日"><a href="#四月三日" class="headerlink" title="四月三日"></a>四月三日</h2><hr>
+<p><strong>1.简单网络管理协议SNMP</strong></p>
+<blockquote>
+<p>假设有一个 LAN ，每 10 分钟轮询所有被管理设备一次，管理报文的处理时间是 50 ms，网络延迟为 1 ms，没有明显的网络拥塞，单个轮询需要时间大约为 0.2 s，则该管理站最多可支持<font color="red"><strong>3000</strong></font>个设备。  </p>
+<p>所有被管设备在每10分钟内轮询一次意味着所有被管设备要被轮询完花掉了10*60=600秒。由于单台设备是0.2s，所以被管设备总共有600/0.2=3000台。题干中的报文处理时间和网络延迟为干扰项。</p>
+</blockquote>
+<p><strong>2.六大子系统</strong></p>
+<blockquote>
+<p>通常情况下，信息插座的安装位置距离地面的高度为<strong>30~50cm</strong>。</p>
+</blockquote>
+<p><strong>3.CRC校验</strong></p>
+<blockquote>
+<p>CRC是链路层常用的检错码，若生成多项式为x<sup>5</sup>+x<sup>3</sup>+1，传输数据10101110，得到的CRC校验码是（<font color="red">** 01000 **</font>）。<br>要计算 CRC 校验码，需根据 CRC 生成多项进行。例如：原始报文为 10101110，其生成多项式为：x<sup>5</sup>+x<sup>3</sup>+1。<br>在计算时，是在原始报文的后面添加若干个0（个数为生成多项式的最高次幂数，它也是最终校验位的位数。上式中，校验位数应该为5）作为被除数，除以生成多项式所对应的二进制数（由生成多项式的幂次决定，此题中除数应该为101001），最后使用模2除法，得到的余数为01000，此余数即为 CRC 校验码。<br>点拨：  </p>
+<ul>
+<li>1.通过生成多项式的最高次幂数可以确定需要添加几个校验位</li>
+<li>2.通过生成多项式可以求得除数</li>
+<li>3.进行运算时使用的是模除，而非除法</li>
+</ul>
+</blockquote>
+<p><strong>4.CSMA/CD协议</strong></p>
+<blockquote>
+<p>以太网协议中使用了二进制指数后退算法，其冲突后最大的尝试次数为（<font color="red">16</font>）次。</p>
+</blockquote>
+<p><strong>5.多路复用技术</strong></p>
+<blockquote>
+<p>E1 子信道速率为：64kbps。</p>
+</blockquote>
+<p><strong>6.DHCP协议报文类型</strong></p>
+<blockquote>
+<p>当 DHCP 服务器拒绝客户端的 IP 地址请求对发送  <strong>DhcpNack</strong> 报文。</p>
+</blockquote>
+<p><strong>7.计算机专业英语</strong></p>
+<blockquote>
+<p>All three types of cryptography schemes have unique function mapping to specific applications.（所有三种类型的密码方案都具有针对特定应用程序的唯一函数映射。） For example,the symmetric key <font color="red"><strong>cryptography</strong></font> approach is typically used for the encryption of data providing <font color="red"><strong>confidentiality</strong></font> ,where as asymmetric key cryptography is mainly used in key <font color="red"><strong>exchange</strong></font> and nonrepudiation,thereby providing confidentiality and authentication.（例如，对称密钥加密方法通常用于提供机密性的数据加密，其中非对称密钥加密主要用于密钥交换和不可否认，从而提供机密性和身份验证。） The hash <font color="red"><strong>algorithm</strong></font> (noncryptic),on the other hand,does not provide confidentiality but provides message integrity,and cryptographic hash algorithms provide message <font color="red"><strong>integrity</strong></font> and identity of peers during transport over insecure channels.（另一方面，散列算法（非加密）不提供机密性，但提供消息完整性，并且加密散列算法在通过不安全信道传输期间提供消息完整度和对等方的身份。）<br>问题1</p>
+<ul>
+<li><font color="grenn">A. cryptography（密码学）</font></li>
+<li>B. decode（破译，破解）</li>
+<li>C. privacy（隐私）</li>
+<li>D. security（保护措施）</li>
+</ul>
+<p>问题2</p>
+<ul>
+<li>A. conduction（传导）</li>
+<li>B. confidence（自信）</li>
+<li><font color="grenn">C. confidentiality（保密性）</font></li>
+<li>D. connection（关系）</li>
+</ul>
+<p>问题3</p>
+<ul>
+<li>A. authentication（身份验证）</li>
+<li>B. structure（结构）</li>
+<li>C. encryption（加密）</li>
+<li><font color="grenn">D. exchange（交换）</font></li>
+</ul>
+<p>问题4</p>
+<ul>
+<li><font color="grenn">A. algorithm（算法）</font></li>
+<li>B. secure（安全）</li>
+<li>C. structure（结构）</li>
+<li>D. encryption（加密）</li>
+</ul>
+<p>问题5</p>
+<ul>
+<li>A. confidentiality（保密性）</li>
+<li><font color="grenn">B. integrity（完整性）</font></li>
+<li>C. service（服务）</li>
+<li>D. robustness（稳健性）</li>
+</ul>
+</blockquote>
+<h2 id="四月二日"><a href="#四月二日" class="headerlink" title="四月二日"></a>四月二日</h2><hr>
+<p><strong>1.TCP协议</strong></p>
+<blockquote>
+<p>TCP伪首部不包含的字段为 <font color="red"><strong>标识符</strong></font>。<br>伪首部并非TCP&amp;UDP数据报中实际的有效成分。伪首部是一个虚拟的数据结构，其中的信息是从数据报所在IP分组头中提取的，既不向下传送也不向上递交，而仅仅是为计算校验和。这个伪首标包含源地址、目的地址、协议和TCP&amp;UDP长度等字段。<br><img src="/../images/TCP%E5%8D%8F%E8%AE%AE.png" alt="TCP协议"></p>
+</blockquote>
+<p><strong>2.Telnet远程登录协议</strong></p>
+<blockquote>
+<p>Telnet是用于远程访问服务器的常用协议。下列关于Telnet的描述中，不正确的是（ <font color="red"><strong>C</strong></font> ）。<br>A.可传输数据和口令<br>B.默认端口号是 23<br><font color="red"><strong>C.一种安全的通信协议</strong></font><br>D.用TCP作为传输层协议<br>Telnet 远程登录协议通过 TCP 23 号端口建立链接，可以传输数据和口令，但是数据和口令以明文形式发送，并不安全。<br>点拨：在使用 telnet 时，会用到NVT格式传送数据。</p>
+</blockquote>
+<p><strong>3.DNS查询方式</strong></p>
+<blockquote>
+<p><strong>递归查询</strong>：如果主机所询问的本地域名服务器不知道被查询的域名的IP地址，那么本地域名服务器就以DNS客户的身份，向其它根域名服务器继续发出查询请求报文（即替主机继续查询），而不是让主机自己进行下一步查询。<br><strong>迭代解析</strong>：本地域名服务器向根域名服务器的查询的迭代查询。迭代查讯的特点：当根域名服务器收到本地域名服务器发出的迭代查讯请求报文时，要么给出所要查询的IP地址，要么告诉本地服务器：“你下一步应当向哪一个域名服务器进行查询”。然后本地服务器进行后续的查询。、</p>
+</blockquote>
+<p><strong>4.数字签名</strong></p>
+<blockquote>
+<p>下面不属于数字签名作用的是（<font color="red"><strong>可验证接收者的合法性</strong></font>）<br>数字签名能够实现三点功能：<br>（1）接收者能够核实发送者对报文的签名，也就是说，接收者能够确信该报文确实是发送者所发送的。其他人无法伪造对报文的签名，这就叫做<font color="red">报文鉴别</font>。<strong>（接收者可验证消息来源的真实性）</strong><br>（2）接收者确信所收到的数据和发送者发送的完全一样，没有被篡改过。这就叫做<font color="red">报文的完整性</font>。<strong>（接收者无法伪造和篡改消息）</strong><br>（3）发送者事后不能抵赖对报文的签名。这就叫做<font color="red">不可否认性</font>。<strong>（发送者无法否认发送过该消息）</strong></p>
+</blockquote>
+<h2 id="四月一日"><a href="#四月一日" class="headerlink" title="四月一日"></a>四月一日</h2><hr>
+<p><strong>1.CSMA/CA 协议</strong></p>
+<blockquote>
+<p>在 802.11 中采用优先级来进行不同业务的区分，优先级最低的是（<font color="red"><strong>分布式协调功能竞争访问</strong></font>）。<br>在IEEE 802.11 标准中，为了使各种MAC操作互相配合，IEEE 802.11 推荐使用 3 种帧间隔（IFS），以便提供基于优先级的访问控制。  </p>
+<ul>
+<li>DIFS（分布式协调 IFS）：最长的 IFS，优先级最低，用于异步帧竞争访问的时延。  </li>
+<li>PIFS（点协调 IFS）：中等长度的 IFS，优先级居中，在 PCF 操作中使用。  </li>
+<li>SIFS（短 IFS）：最短的 IFS，优先级最高，用于需要立即响应的操作。  </li>
+<li>DIFS 用在 CSMA/CA 协议中，只要 MAC 层有数据要发送，就监听信道是否空闲。如果信道空闲，等待 DIFS 时段后开始发送；如果信道忙，就继续监听，直到可以发送为止。</li>
+</ul>
+</blockquote>
+<p><strong>2.数字编码与编码效率</strong></p>
+<blockquote>
+<p>4B/5B 编码先将数据按 4 位分组，将每个分组映射到 5 单位的代码，然后采用（<font color="red"><strong>NRZ-I</strong></font>）进行编码。<br>4B/5B 编码实际上是一种两级编码。系统中使用<font color="red">不归零编码</font>，在发送到传输介质之前要变成见 1 就翻的不归零编码（NRZ-I）。NRZ-I 代码序列中 1 的个数越多，越能提供同步定时信息，但如果遇到长串的 0，则不能提供同步信息。所以在发送到介质之前还需要进行一次 4B/5B 编码，发送器扫描要发送的位序列，将其每 4 位分成一组，然后按照 4B/5B 编码用 5 位代码表示 4 位有效信息，因此编码效率为 4/5&amp;times；100% = 80% = 0.8。</p>
+</blockquote>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Zhang</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://0bigbug.github.io/2023/04/02/si-yue-mei-ri-yi-ti/">https://0bigbug.github.io/2023/04/02/si-yue-mei-ri-yi-ti/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Zhang</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/">
+                                    <span class="chip bg-color">网络工程师</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'ANO16eGh1QCBLmM6EuNCSKOx-gzGzoHsz',
+        appKey: 'Z6gG9XN7LHBSYAUoMUkraMP1',
+        serverURLs: 'https://ano16egh.lc-cn-n1-shared.com',
+        notify: 'true' === 'true',
+        verify: 'true' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '留下你的评论吧'
+    });
+</script>
+
+<!--酷Q推送-->
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/04/14/wang-luo-gong-cheng-shi-gao-pin-kao-dian/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="网络工程师高频考点">
+                        
+                        <span class="card-title">网络工程师高频考点</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-14
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Zhang
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/">
+                        <span class="chip bg-color">网络工程师</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/03/21/ying-yu-xue-xi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="英语学习">
+                        
+                        <span class="card-title">英语学习</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-21
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Zhang
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%8B%B1%E8%AF%AD/">
+                        <span class="chip bg-color">英语</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="685942127"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+            
+
+                <div class="container row center-align" style="margin-bottom: 0px !important;">
+                    <div class="col s12 m8 l8 copy-right">
+                        Copyright&nbsp;&copy;
+                        
+                            <span id="year">2019-2023</span>
+                            
+                                    <a href="/about" target="_blank">
+                                        zhang
+                                    </a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;
+                                    <a href="https://github.com/0bigbug/0bigbug.github.io" target="_blank">Matery</a>
+                                    
+                                            <br>
+                                            
+                                                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;
+                                                站点总字数:&nbsp;<span class="white-color">
+                                                        34.9k
+                                                    </span>
+                                                    
+                                                        
+                                                            
+                                                                
+                                                                    
+                                                                        
+                                                                            <span id="busuanzi_container_site_pv">
+                                                                                &nbsp;|&nbsp;<i
+                                                                                    class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                                                                                    <span id="busuanzi_value_site_pv"
+                                                                                        class="white-color"></span>
+                                                                            </span>
+                                                                            
+                                                                                
+                                                                                    <span id="busuanzi_container_site_uv">
+                                                                                        &nbsp;|&nbsp;<i
+                                                                                            class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                                                                                            <span
+                                                                                                id="busuanzi_value_site_uv"
+                                                                                                class="white-color"></span>
+                                                                                    </span>
+                                                                                    
+                                                                                        <br>
+
+                                                                                        <!-- 运行天数提醒. -->
+                                                                                        
+                                                                                                <br>
+                                                                                                
+                    </div>
+                    <div class="col s12 m4 l4 social-link social-statis">
+                        
+    <a href="https://github.com/0bigbug/0bigbug.github.io" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+    
+
+        
+            <a href="mailto:1753998700@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+                <i class="fas fa-envelope-open"></i>
+            </a>
+            
+
+                
+
+                        
+
+                                
+                                    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1753998700" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1753998700" data-position="top" data-delay="50">
+                                        <i class="fab fa-qq"></i>
+                                    </a>
+                                    
+
+                                        
+
+                                                
+
+                                                        
+                                                                
+                                                                    <a href="" class="tooltipped" target="_blank" data-tooltip="添加我的微信" data-position="top" data-delay="50">
+                                                                        <i class="fab fa-weixin"></i>
+                                                                    </a>
+                                                                    
+                    </div>
+                </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
+            }
+        </script>
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
