@@ -59,9 +59,9 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Zhang's blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Zhang's blog" type="application/atom+xml">
 </head>
 
 
@@ -409,14 +409,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-06-19
+                    2023-06-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.4k
                 </div>
                 
 
@@ -444,32 +444,32 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h3 id="问题一："><a href="#问题一：" class="headerlink" title="问题一："></a>问题一：</h3><blockquote>
-<p>该错误在做到发布多个网站的时候，重启 httpd 服务报错后重启服务器，然后就出现了这样的错误。<br><img src="/2023/06/08/linux/Users\zhang\AppData\Roaming\Typora\typora-user-images\image-20230603182004857.png" alt="image-20230603182004857"></p>
+<p>该错误在做到发布多个网站的时候，重启 httpd 服务报错后重启服务器，然后就出现了这样的错误。<br><img src="/2023/06/08/linux/myblog\source_posts\Linux\1.1.png" alt="1.1"></p>
 </blockquote>
 <h4 id="错误原因："><a href="#错误原因：" class="headerlink" title="错误原因："></a>错误原因：</h4><blockquote>
-<p>这一步的原因是做的时候192.168.1.1不是我本机上的任何一个地址，所以出现了这样的错误。<img src="/2023/06/08/linux/Users\zhang\AppData\Roaming\Typora\typora-user-images\image-20230603212643329.png" alt="image-20230603212643329"></p>
+<p>这一步的原因是做的时候192.168.1.1不是我本机上的任何一个地址，所以出现了这样的错误。<img src="/2023/06/08/linux/myblog\source_posts\Linux\1.2.png" alt="1.2"></p>
 </blockquote>
 <h4 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h4><blockquote>
 <p>在修改成0.0.0.0后发现可以进行 sshd 的重启服务了，之后就修改成为了限制单独的ip：192.168.56.104后就解决了这个问题。</p>
-<p><img src="/2023/06/08/linux/Users\zhang\AppData\Roaming\Typora\typora-user-images\image-20230603212518885.png" alt="image-20230603212518885"></p>
+<p><img src="/2023/06/08/linux/myblog\source_posts\Linux\1.3.png" alt="1.3"></p>
 </blockquote>
 <h3 id="问题二："><a href="#问题二：" class="headerlink" title="问题二："></a>问题二：</h3><blockquote>
 <p>在做完php多发网页后出现了httpd重启的错误</p>
-<p><img src="/2023/06/08/linux/Users\zhang\AppData\Roaming\Typora\typora-user-images\image-20230603213155984.png" alt="image-20230603213155984"></p>
+<p><img src="/2023/06/08/linux/myblog\source_posts\Linux\2.1.png" alt="2.1"></p>
 </blockquote>
 <h4 id="错误原因：-1"><a href="#错误原因：-1" class="headerlink" title="错误原因："></a>错误原因：</h4><blockquote>
 <p>发现是SELinux没有开放82端口。</p>
-<p><img src="/2023/06/08/linux/Users\zhang\AppData\Roaming\Typora\typora-user-images\image-20230603213309323.png" alt="image-20230603213309323"></p>
-<p><img src="/2023/06/08/linux/Users\zhang\AppData\Roaming\Typora\typora-user-images\image-20230603213326149.png" alt="image-20230603213326149"></p>
+<p><img src="/2023/06/08/linux/myblog\source_posts\Linux\2.2.png" alt="2.2"></p>
+<p><img src="/2023/06/08/linux/myblog\source_posts\Linux\2.3.png" alt="2.3"></p>
 </blockquote>
 <h4 id="解决办法：-1"><a href="#解决办法：-1" class="headerlink" title="解决办法："></a>解决办法：</h4><blockquote>
 <p>在SELinux添加http的82端口放行。</p>
-<p><img src="/2023/06/08/linux/Users\zhang\AppData\Roaming\Typora\typora-user-images\image-20230603213435258.png" alt="image-20230603213435258"></p>
-<p>[参考文章]([Vultr防火墙SELinux添加放行端口教程 - Vultr优惠网 (vultryhw.cn)](<a target="_blank" rel="noopener" href="https://www.vultryhw.cn/selinux-open-port-tutorial/#:~:text=%E4%BA%8C%E3%80%81SELinux%E6%B7%BB%E5%8A%A0%E6%94%BE%E8%A1%8C%E7%AB%AF%E5%8F%A3">https://www.vultryhw.cn/selinux-open-port-tutorial/#:~:text=二、SELinux添加放行端口</a> 1 修改%2Fetc%2Fselinux%2Fconfig 文件,2 将SELINUX%3Denforcing改为SELINUX%3Ddisabled 3 重启生效))</p>
+<p><img src="/2023/06/08/linux/myblog\source_posts\Linux\2.4.png" alt="2.4"></p>
+<p><a target="_blank" rel="noopener" href="https://www.vultryhw.cn/selinux-open-port-tutorial/#:~:text=%E4%BA%8C%E3%80%81SELinux%E6%B7%BB%E5%8A%A0%E6%94%BE%E8%A1%8C%E7%AB%AF%E5%8F%A31%E4%BF%AE%E6%94%B9%2Fetc%2Fselinux%2Fconfig%E6%96%87%E4%BB%B6,2%E5%B0%86SELINUX%3Denforcing%E6%94%B9%E4%B8%BASELINUX%3Ddisabled3%E9%87%8D%E5%90%AF%E7%94%9F%E6%95%88">参考文章</a></p>
 </blockquote>
 <h3 id="问题三"><a href="#问题三" class="headerlink" title="问题三"></a>问题三</h3><blockquote>
 <p>做完WordPress后出现了这个页面</p>
-<p><img src="/2023/06/08/linux/Users\zhang\AppData\Roaming\Typora\typora-user-images\image-20230604203346938.png" alt="image-20230604203346938"></p>
+<p><img src="/2023/06/08/linux/myblog\source_posts\Linux\3.1.png" alt="3.1"></p>
 </blockquote>
 <h4 id="错误原因：-2"><a href="#错误原因：-2" class="headerlink" title="错误原因："></a>错误原因：</h4><blockquote>
 <p>WordPress 4.9.4版本和php 5.4版本不兼容</p>
@@ -479,10 +479,10 @@
 </blockquote>
 <h3 id="问题四"><a href="#问题四" class="headerlink" title="问题四"></a>问题四</h3><blockquote>
 <p>登录本地ftp时报错</p>
-<p><img src="/2023/06/08/linux/Users\zhang\AppData\Roaming\Typora\typora-user-images\image-20230607120812437.png" alt="image-20230607120812437"></p>
+<p><img src="/2023/06/08/linux/myblog\source_posts\Linux\3.2.png" alt="3.2"></p>
 </blockquote>
 <h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><blockquote>
-<p><img src="/2023/06/08/linux/Users\zhang\AppData\Roaming\Typora\typora-user-images\image-20230607120840001.png" alt="image-20230607120840001"></p>
+<p><img src="/2023/06/08/linux/myblog\source_posts\Linux\3.3.png" alt="3.3"></p>
 </blockquote>
 <h3 id="FTP用户权限修改参考文档"><a href="#FTP用户权限修改参考文档" class="headerlink" title="FTP用户权限修改参考文档"></a>FTP用户权限修改<a target="_blank" rel="noopener" href="https://blog.csdn.net/pengchengxue110/article/details/54426296">参考文档</a></h3><blockquote>
 <p> usermod -d /home zhaosan  //将用户zhaosan的主目录更改为/home。</p>
