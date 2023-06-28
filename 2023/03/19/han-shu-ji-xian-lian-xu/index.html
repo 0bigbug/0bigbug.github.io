@@ -337,7 +337,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = 'b690b29b19cf1f0013895a31042c9aa4dd061b5f4fbad29d897683cc0bd9c451';
+        let pwd = '30fb30a1e4ccbdc780770d44c175eb28bde824daf6d1d46185cdb9ca122b40c5';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -402,7 +402,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-04-09
+                    2023-06-28
                 </div>
                 
 
@@ -1092,16 +1092,12 @@
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -1126,7 +1122,7 @@
                    type="playlist"
                    id="685942127"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
@@ -1158,7 +1154,7 @@
                                             
                                                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;
                                                 站点总字数:&nbsp;<span class="white-color">
-                                                        34.9k
+                                                        35.9k
                                                     </span>
                                                     
                                                         

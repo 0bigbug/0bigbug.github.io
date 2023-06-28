@@ -444,32 +444,32 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h3 id="问题一："><a href="#问题一：" class="headerlink" title="问题一："></a>问题一：</h3><blockquote>
-<p>该错误在做到发布多个网站的时候，重启 httpd 服务报错后重启服务器，然后就出现了这样的错误。<br><img src="/2023/06/08/linux/_posts/Linux/1.1.png" alt="1.1"></p>
+<p>该错误在做到发布多个网站的时候，重启 httpd 服务报错后重启服务器，然后就出现了这样的错误。<br><img src="/2023/06/08/linux/1.1.png" alt="1.1"></p>
 </blockquote>
 <h4 id="错误原因："><a href="#错误原因：" class="headerlink" title="错误原因："></a>错误原因：</h4><blockquote>
-<p>这一步的原因是做的时候192.168.1.1不是我本机上的任何一个地址，所以出现了这样的错误。<img src="/2023/06/08/linux/_posts/Linux/1.2.png" alt="1.2"></p>
+<p>这一步的原因是做的时候192.168.1.1不是我本机上的任何一个地址，所以出现了这样的错误。<img src="/2023/06/08/linux/1.2.png" alt="1.2"></p>
 </blockquote>
 <h4 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h4><blockquote>
 <p>在修改成0.0.0.0后发现可以进行 sshd 的重启服务了，之后就修改成为了限制单独的ip：192.168.56.104后就解决了这个问题。</p>
-<p><img src="/2023/06/08/linux/_posts/Linux/1.3.png" alt="1.3"></p>
+<p><img src="/2023/06/08/linux/1.3.png" alt="1.3"></p>
 </blockquote>
 <h3 id="问题二："><a href="#问题二：" class="headerlink" title="问题二："></a>问题二：</h3><blockquote>
 <p>在做完php多发网页后出现了httpd重启的错误</p>
-<p><img src="/2023/06/08/linux/_posts/Linux/2.1.png" alt="2.1"></p>
+<p><img src="/2023/06/08/linux/2.1.png" alt="2.1"></p>
 </blockquote>
 <h4 id="错误原因：-1"><a href="#错误原因：-1" class="headerlink" title="错误原因："></a>错误原因：</h4><blockquote>
 <p>发现是SELinux没有开放82端口。</p>
-<p><img src="/2023/06/08/linux/_posts/Linux/2.2.png" alt="2.2"></p>
-<p><img src="/2023/06/08/linux/_posts/Linux/2.3.png" alt="2.3"></p>
+<p><img src="/2023/06/08/linux/2.2.png" alt="2.2"></p>
+<p><img src="/2023/06/08/linux/2.3.png" alt="2.3"></p>
 </blockquote>
 <h4 id="解决办法：-1"><a href="#解决办法：-1" class="headerlink" title="解决办法："></a>解决办法：</h4><blockquote>
 <p>在SELinux添加http的82端口放行。</p>
-<p><img src="/2023/06/08/linux/_posts/Linux/2.4.png" alt="2.4"></p>
+<p><img src="/2023/06/08/linux/2.4.png" alt="2.4"></p>
 <p><a target="_blank" rel="noopener" href="https://www.vultryhw.cn/selinux-open-port-tutorial/#:~:text=%E4%BA%8C%E3%80%81SELinux%E6%B7%BB%E5%8A%A0%E6%94%BE%E8%A1%8C%E7%AB%AF%E5%8F%A31%E4%BF%AE%E6%94%B9%2Fetc%2Fselinux%2Fconfig%E6%96%87%E4%BB%B6,2%E5%B0%86SELINUX%3Denforcing%E6%94%B9%E4%B8%BASELINUX%3Ddisabled3%E9%87%8D%E5%90%AF%E7%94%9F%E6%95%88">参考文章</a></p>
 </blockquote>
 <h3 id="问题三"><a href="#问题三" class="headerlink" title="问题三"></a>问题三</h3><blockquote>
 <p>做完WordPress后出现了这个页面</p>
-<p><img src="/2023/06/08/linux/_posts/Linux/3.1.png" alt="3.1"></p>
+<p><img src="/2023/06/08/linux/3.1.png" alt="3.1"></p>
 </blockquote>
 <h4 id="错误原因：-2"><a href="#错误原因：-2" class="headerlink" title="错误原因："></a>错误原因：</h4><blockquote>
 <p>WordPress 4.9.4版本和php 5.4版本不兼容</p>
@@ -479,10 +479,10 @@
 </blockquote>
 <h3 id="问题四"><a href="#问题四" class="headerlink" title="问题四"></a>问题四</h3><blockquote>
 <p>登录本地ftp时报错</p>
-<p><img src="/2023/06/08/linux/_posts/Linux/3.2.png" alt="3.2"></p>
+<p><img src="/2023/06/08/linux/3.2.png" alt="3.2"></p>
 </blockquote>
 <h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><blockquote>
-<p><img src="/2023/06/08/linux/_posts/Linux/3.3.png" alt="3.3"></p>
+<p><img src="/2023/06/08/linux/3.3.png" alt="3.3"></p>
 </blockquote>
 <h3 id="FTP用户权限修改参考文档"><a href="#FTP用户权限修改参考文档" class="headerlink" title="FTP用户权限修改参考文档"></a>FTP用户权限修改<a target="_blank" rel="noopener" href="https://blog.csdn.net/pengchengxue110/article/details/54426296">参考文档</a></h3><blockquote>
 <p> usermod -d /home zhaosan  //将用户zhaosan的主目录更改为/home。</p>
@@ -995,8 +995,7 @@
                 <a href="/2023/06/27/xiang-dui-ni-shuo-de-yi-xie-hua/">
                     <div class="card-image">
                         
-                        
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="相对你说的一些话">
+                        <img src="https://img1.imgtp.com/2023/06/28/6Xz2HLjo.jpg" class="responsive-img" alt="相对你说的一些话">
                         
                         <span class="card-title">相对你说的一些话</span>
                     </div>
@@ -1004,7 +1003,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            你以后会干嘛，会在哪里工作，在哪里定居，在哪里生活，我想去找你，想和你生活在一个城市，和你的生活节奏同步。
                         
                     </div>
                     <div class="publish-info">
@@ -1014,10 +1013,18 @@
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            Zhang
+                            张嘉鹏
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%97%A5%E8%AE%B0/">
+                        <span class="chip bg-color">日记</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1190,16 +1197,12 @@
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -1224,7 +1227,7 @@
                    type="playlist"
                    id="685942127"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
@@ -1256,7 +1259,7 @@
                                             
                                                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;
                                                 站点总字数:&nbsp;<span class="white-color">
-                                                        34.9k
+                                                        35.9k
                                                     </span>
                                                     
                                                         

@@ -6,7 +6,7 @@
   <link href="https://0bigbug.github.io/atom.xml" rel="self"/>
   
   <link href="https://0bigbug.github.io/"/>
-  <updated>2023-06-27T09:05:05.221Z</updated>
+  <updated>2023-06-28T08:48:57.332Z</updated>
   <id>https://0bigbug.github.io/</id>
   
   <author>
@@ -21,11 +21,21 @@
     <link href="https://0bigbug.github.io/2023/06/27/xiang-dui-ni-shuo-de-yi-xie-hua/"/>
     <id>https://0bigbug.github.io/2023/06/27/xiang-dui-ni-shuo-de-yi-xie-hua/</id>
     <published>2023-06-27T09:05:05.000Z</published>
-    <updated>2023-06-27T09:05:05.221Z</updated>
+    <updated>2023-06-28T08:48:57.332Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;2023年6月22日&quot;&gt;&lt;a href=&quot;#2023年6月22日&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
     
+    <category term="日记" scheme="https://0bigbug.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
     
   </entry>
   
@@ -34,7 +44,7 @@
     <link href="https://0bigbug.github.io/2023/06/08/linux/"/>
     <id>https://0bigbug.github.io/2023/06/08/linux/</id>
     <published>2023-06-08T12:46:46.000Z</published>
-    <updated>2023-06-27T09:26:18.748Z</updated>
+    <updated>2023-06-27T10:28:17.812Z</updated>
     
     
       
@@ -128,7 +138,7 @@
     <link href="https://0bigbug.github.io/2023/04/25/ensp-xue-xi/"/>
     <id>https://0bigbug.github.io/2023/04/25/ensp-xue-xi/</id>
     <published>2023-04-25T12:13:14.000Z</published>
-    <updated>2023-06-06T12:29:30.634Z</updated>
+    <updated>2023-06-28T08:51:54.058Z</updated>
     
     
     
@@ -143,14 +153,15 @@
     <link href="https://0bigbug.github.io/2023/04/21/sql-injection/"/>
     <id>https://0bigbug.github.io/2023/04/21/sql-injection/</id>
     <published>2023-04-21T10:39:58.000Z</published>
-    <updated>2023-04-22T06:24:31.651Z</updated>
+    <updated>2023-06-28T08:40:59.612Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;MySQL数据库&quot;&gt;&lt;a href=&quot;#MySQL数据库&quot; class=&quot;headerlink&quot; title=&quot;MySQL数据库&quot;&gt;&lt;/a&gt;MySQL数据库&lt;/h1&gt;&lt;h2 id=&quot;SQL查讯&quot;&gt;&lt;a href=&quot;#SQL查讯&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;SQL查讯&quot;&gt;&lt;a href=&quot;#SQL查讯&quot; class=&quot;headerlink&quot; title=&quot;SQL查讯&quot;&gt;&lt;/a&gt;SQL查讯&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;select&lt;/strong&gt; *</summary>
         
       
     
@@ -237,7 +248,7 @@
     <link href="https://0bigbug.github.io/2023/03/21/ying-yu-xue-xi/"/>
     <id>https://0bigbug.github.io/2023/03/21/ying-yu-xue-xi/</id>
     <published>2023-03-21T13:13:12.000Z</published>
-    <updated>2023-05-10T11:59:38.625Z</updated>
+    <updated>2023-06-28T08:41:51.706Z</updated>
     
     
       
@@ -308,7 +319,7 @@
     <link href="https://0bigbug.github.io/2023/03/19/han-shu-ji-xian-lian-xu/"/>
     <id>https://0bigbug.github.io/2023/03/19/han-shu-ji-xian-lian-xu/</id>
     <published>2023-03-19T07:50:31.000Z</published>
-    <updated>2023-04-09T12:35:02.931Z</updated>
+    <updated>2023-06-28T08:41:43.620Z</updated>
     
     
       
