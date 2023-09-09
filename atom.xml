@@ -6,7 +6,7 @@
   <link href="https://0bigbug.github.io/atom.xml" rel="self"/>
   
   <link href="https://0bigbug.github.io/"/>
-  <updated>2023-06-28T08:48:57.332Z</updated>
+  <updated>2023-09-09T09:17:53.375Z</updated>
   <id>https://0bigbug.github.io/</id>
   
   <author>
@@ -17,11 +17,80 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HCIA</title>
+    <link href="https://0bigbug.github.io/2023/09/01/hcia/"/>
+    <id>https://0bigbug.github.io/2023/09/01/hcia/</id>
+    <published>2023-09-01T07:06:12.000Z</published>
+    <updated>2023-09-09T09:17:53.375Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1、HCIA-入门&quot;&gt;&lt;a href=&quot;#1、HCIA-入门&quot; class=&quot;headerlink&quot; title=&quot;1、HCIA 入门&quot;&gt;&lt;/a&gt;1、HCIA 入门&lt;/h1&gt;&lt;h2 id=&quot;1-传输介质&quot;&gt;&lt;a href=&quot;#1-传输介质&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="网络工程师" scheme="https://0bigbug.github.io/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>kali</title>
+    <link href="https://0bigbug.github.io/2023/07/07/kali/"/>
+    <id>https://0bigbug.github.io/2023/07/07/kali/</id>
+    <published>2023-07-07T04:38:56.000Z</published>
+    <updated>2023-08-01T11:27:46.072Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、kali网络配置&quot;&gt;&lt;a href=&quot;#一、kali网络配置&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="https://0bigbug.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>music</title>
+    <link href="https://0bigbug.github.io/2023/07/01/music/"/>
+    <id>https://0bigbug.github.io/2023/07/01/music/</id>
+    <published>2023-07-01T09:53:08.000Z</published>
+    <updated>2023-07-01T10:07:40.876Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Because-of-You-Kelly-Clarkson-凯丽-克拉克森&quot;&gt;&lt;a href=&quot;#Because-of-You-Kelly-Clarkson-凯丽-克拉克森&quot; class=&quot;headerlink&quot; title=&quot;Because of You -</summary>
+        
+      
+    
+    
+    
+    
+    <category term="音乐" scheme="https://0bigbug.github.io/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+  </entry>
+  
+  <entry>
     <title>相对你说的一些话</title>
     <link href="https://0bigbug.github.io/2023/06/27/xiang-dui-ni-shuo-de-yi-xie-hua/"/>
     <id>https://0bigbug.github.io/2023/06/27/xiang-dui-ni-shuo-de-yi-xie-hua/</id>
     <published>2023-06-27T09:05:05.000Z</published>
-    <updated>2023-06-28T08:48:57.332Z</updated>
+    <updated>2023-09-01T07:07:22.091Z</updated>
     
     
       
@@ -134,21 +203,6 @@
   </entry>
   
   <entry>
-    <title>ensp学习</title>
-    <link href="https://0bigbug.github.io/2023/04/25/ensp-xue-xi/"/>
-    <id>https://0bigbug.github.io/2023/04/25/ensp-xue-xi/</id>
-    <published>2023-04-25T12:13:14.000Z</published>
-    <updated>2023-06-28T08:51:54.058Z</updated>
-    
-    
-    
-    
-    
-    <category term="网络工程师" scheme="https://0bigbug.github.io/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
-    
-  </entry>
-  
-  <entry>
     <title>SQL-injection</title>
     <link href="https://0bigbug.github.io/2023/04/21/sql-injection/"/>
     <id>https://0bigbug.github.io/2023/04/21/sql-injection/</id>
@@ -240,29 +294,6 @@
     
     
     <category term="网络工程师" scheme="https://0bigbug.github.io/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>英语学习</title>
-    <link href="https://0bigbug.github.io/2023/03/21/ying-yu-xue-xi/"/>
-    <id>https://0bigbug.github.io/2023/03/21/ying-yu-xue-xi/</id>
-    <published>2023-03-21T13:13:12.000Z</published>
-    <updated>2023-06-28T08:41:51.706Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;每日单词&quot;&gt;&lt;a href=&quot;#每日单词&quot; class=&quot;headerlink&quot; title=&quot;每日单词&quot;&gt;&lt;/a&gt;每日单词&lt;/h1&gt;&lt;h2 id=&quot;三月二十五&quot;&gt;&lt;a href=&quot;#三月二十五&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="英语" scheme="https://0bigbug.github.io/tags/%E8%8B%B1%E8%AF%AD/"/>
     
   </entry>
   
